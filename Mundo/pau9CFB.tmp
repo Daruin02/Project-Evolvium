@@ -1,0 +1,164 @@
+[gd_scene load_steps=11 format=3 uid="uid://dy8ro1n7gvq8x"]
+
+[ext_resource type="Script" path="res://Mundo/options_menu.gd" id="1_7u6re"]
+[ext_resource type="Texture2D" uid="uid://ddngpvx5npd2m" path="res://Mundo/menu.png" id="2_551ri"]
+[ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="3_pr6uc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_owcju"]
+font = ExtResource("3_pr6uc")
+font_size = 100
+outline_size = 24
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c7t43"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0.189, 0.216, 0.261, 1)
+border_color = Color(0.147, 0.168, 0.203, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3s7lk"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0.147, 0.168, 0.203, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.44, 0.73, 0.98, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfh4q"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(1, 1, 1, 0.11)
+border_color = Color(1, 1, 1, 0.05)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jsmop"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0.267028, 0.00125004, 0.0141805, 1)
+border_width_left = 5
+border_width_bottom = 5
+border_color = Color(0.165707, 2.48174e-07, 0.00635202, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7guag"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0.128625, 0.147, 0.177625, 1)
+border_color = Color(0.1155, 0.132, 0.1595, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="Theme" id="Theme_hqp3p"]
+Button/colors/font_color = Color(0.8025, 0.81, 0.8225, 1)
+Button/colors/font_disabled_color = Color(1, 1, 1, 0.35)
+Button/colors/font_focus_color = Color(0.90125, 0.905, 0.91125, 1)
+Button/colors/font_hover_color = Color(0.90125, 0.905, 0.91125, 1)
+Button/colors/font_hover_pressed_color = Color(0.559925, 0.7755, 0.962125, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 0)
+Button/colors/font_pressed_color = Color(0.44, 0.73, 0.98, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1.15, 1.15, 1.15, 1)
+Button/colors/icon_hover_color = Color(1.15, 1.15, 1.15, 1)
+Button/colors/icon_hover_pressed_color = Color(0.506, 0.8395, 1.127, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(0.506, 0.8395, 1.127, 1)
+Button/constants/align_to_largest_stylebox = 1
+Button/constants/h_separation = 4
+Button/constants/outline_size = 0
+Button/fonts/font = ExtResource("3_pr6uc")
+Button/styles/disabled = SubResource("StyleBoxFlat_c7t43")
+Button/styles/focus = SubResource("StyleBoxFlat_3s7lk")
+Button/styles/hover = SubResource("StyleBoxFlat_bfh4q")
+Button/styles/normal = SubResource("StyleBoxFlat_jsmop")
+Button/styles/pressed = SubResource("StyleBoxFlat_7guag")
+
+[node name="pauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7u6re")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_551ri")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 675.0
+offset_top = -472.0
+offset_right = 1125.0
+offset_bottom = -335.0
+scale = Vector2(0.5, 0.5)
+text = "Pause
+"
+label_settings = SubResource("LabelSettings_owcju")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 1579.0
+offset_top = 161.0
+offset_right = 1693.0
+offset_bottom = 263.0
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme = SubResource("Theme_hqp3p")
+
+[node name="Back to game" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="Volume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volume"
+
+[node name="Back to menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back to Menu"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back to game" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_Volume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back to menu" to="." method="_on_Back_pressed"]

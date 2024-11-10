@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://xu06fq04506e"]
+
+[ext_resource type="PackedScene" uid="uid://dd5lp4tbgcqoi" path="res://Models/tileseHD.glb" id="1_lxp3d"]
+
+[node name="tileseHD" instance=ExtResource("1_lxp3d")]

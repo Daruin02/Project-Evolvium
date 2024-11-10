@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://crxijjso63w53"]
+
+[ext_resource type="Texture2D" uid="uid://b0x75bw0eub1h" path="res://pngs/Candlestick_PNG_Clip_Art-2192.png" id="1_rjcl3"]
+
+[node name="vela" type="Sprite3D"]
+transform = Transform3D(-0.0699696, -0.0387848, -7.45058e-09, -0.0387848, 0.0699696, 3.72529e-09, 0, -1.73787e-09, -0.08, 99.6084, 58.9589, 7.72534)
+billboard = 1
+shaded = true
+texture = ExtResource("1_rjcl3")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(12.5, 4.76837e-07, -7.35994e-07, -4.76837e-07, 12.5, -1.34503e-06, -4.56759e-14, -5.68434e-14, 12.5, -9.73364, 21.6121, -4.38366)
+light_color = Color(0.999998, 0.437188, 0.344963, 1)
+light_energy = 0.2
+light_indirect_energy = 0.2
+light_volumetric_fog_energy = 0.2

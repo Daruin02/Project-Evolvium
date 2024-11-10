@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg48a6ub323i4"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_lar4e"]
+rayleigh_color = Color(0.0738756, 0.416039, 0.701888, 1)
+mie_coefficient = 0.02
+mie_eccentricity = 0.95
+mie_color = Color(0.736727, 0.748696, 0.514729, 1)
+turbidity = 20.0
+
+[sub_resource type="Sky" id="Sky_7713u"]
+sky_material = SubResource("PhysicalSkyMaterial_lar4e")
+
+[sub_resource type="Environment" id="Environment_185f5"]
+background_mode = 2
+sky = SubResource("Sky_7713u")
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.187615, 0.173667, 0.115058, 1)
+fog_light_energy = 0.2
+fog_sun_scatter = 0.01
+fog_density = 0.03
+fog_aerial_perspective = 1.0
+fog_height = 1.0
+fog_height_density = 0.5
+volumetric_fog_albedo = Color(0.188235, 0.172549, 0.113725, 1)
+volumetric_fog_emission = Color(0.0338533, 0.0338533, 0.0338533, 1)
+volumetric_fog_emission_energy = 0.02
+volumetric_fog_length = 8.0
+volumetric_fog_sky_affect = 0.3
+
+[node name="AmbienteNoche" type="WorldEnvironment"]
+environment = SubResource("Environment_185f5")
+
+[node name="SunLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, -8.74228e-08, -4.37114e-08, 4.37114e-08, 1.91069e-15, -1, 8.74228e-08, -1, 1.91069e-15, 308.725, 246.574, 0)
+light_energy = 0.0
+shadow_enabled = true
+shadow_blur = 2.111

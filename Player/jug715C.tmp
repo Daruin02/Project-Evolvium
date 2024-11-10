@@ -1,0 +1,158 @@
+[gd_scene load_steps=10 format=3 uid="uid://cqdvlb6cc1wmu"]
+
+[ext_resource type="Script" path="res://Player/jugador.gd" id="1_tkee0"]
+[ext_resource type="AudioStream" uid="uid://uhwo3iewlivw" path="res://Sounds/footstepGrave2.mp3" id="2_8gjgm"]
+[ext_resource type="AudioStream" uid="uid://cu5lmg62g53yi" path="res://Sounds/footstepGrave1.mp3" id="3_q1lk7"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_qp0bo"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6oa07"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="Animation" id="Animation_4yuhw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bwdtf"]
+resource_name = "headbob"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0), Vector3(0, 0.58, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_play_footsteps_audio"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ucags"]
+resource_name = "headbobrunning"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0), Vector3(0, 0.58, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.15, 0.45),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_play_footsteps_audio"
+}, {
+"args": [],
+"method": &"_play_footsteps_audio"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ceo3h"]
+_data = {
+"RESET": SubResource("Animation_4yuhw"),
+"headbob": SubResource("Animation_bwdtf"),
+"headbobrunning": SubResource("Animation_ucags")
+}
+
+[node name="jugador" type="CharacterBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 1.2, 0, 0, 0, 0.8, 0, 1, 0)
+script = ExtResource("1_tkee0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_qp0bo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_6oa07")
+
+[node name="neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="neck"]
+
+[node name="Luces" type="Node3D" parent="neck/Camera3D"]
+transform = Transform3D(0.994916, -0.00415754, 0.100623, 1.99778e-11, 0.999148, 0.0412827, -0.100709, -0.0410728, 0.994068, 0.443634, -0.665335, -0.368883)
+
+[node name="lamparaMasLejos" type="SpotLight3D" parent="neck/Camera3D/Luces"]
+transform = Transform3D(0.999976, 0.00609751, -0.00315293, -0.00590117, 0.998245, 0.0589213, 0.00350683, -0.0589013, 0.998257, 0.331053, -0.19547, -0.0825196)
+light_color = Color(0.975706, 0.811676, 0.465673, 1)
+light_energy = 2.8
+light_volumetric_fog_energy = 20.0
+spot_range = 14.7216
+spot_angle = 16.2593
+
+[node name="lamparaLejos" type="SpotLight3D" parent="neck/Camera3D/Luces"]
+transform = Transform3D(0.999976, 0.00609751, -0.00315293, -0.00590117, 0.998245, 0.0589213, 0.00350683, -0.0589013, 0.998257, 0.331053, -0.19547, -0.0825196)
+light_color = Color(0.988429, 0.872645, 0.637451, 1)
+light_energy = 2.4
+light_volumetric_fog_energy = 20.0
+spot_range = 13.1094
+spot_angle = 27.7052
+
+[node name="lamparaCerca" type="SpotLight3D" parent="neck/Camera3D/Luces"]
+transform = Transform3D(0.999976, 0.00609751, -0.00315293, -0.00590117, 0.998245, 0.0589213, 0.00350683, -0.0589013, 0.998257, 0.331053, -0.19547, -0.0825196)
+light_color = Color(0.860089, 0.874195, 0.755272, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 20.0
+spot_range = 9.69412
+spot_angle = 41.5064
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="neck"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ceo3h")
+}
+
+[node name="audio" type="Node3D" parent="neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="footsteps" type="AudioStreamPlayer3D" parent="neck/audio"]
+transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
+stream = ExtResource("2_8gjgm")
+volume_db = -42.0
+
+[node name="jumpstep" type="AudioStreamPlayer3D" parent="neck/audio"]
+stream = ExtResource("3_q1lk7")
+volume_db = -42.0

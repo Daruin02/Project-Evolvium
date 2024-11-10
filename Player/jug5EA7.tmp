@@ -1,0 +1,315 @@
+[gd_scene load_steps=29 format=3 uid="uid://cqdvlb6cc1wmu"]
+
+[ext_resource type="Script" path="res://Player/jugador.gd" id="1_tkee0"]
+[ext_resource type="AudioStream" uid="uid://uhwo3iewlivw" path="res://Sounds/footstepGrave2.mp3" id="2_8gjgm"]
+[ext_resource type="PackedScene" uid="uid://dqc2rkpfaaayq" path="res://Models/motorcycle.glb" id="2_ke1wf"]
+[ext_resource type="PackedScene" uid="uid://dsdjpk7cbpume" path="res://sombrero.tscn" id="2_uqwep"]
+[ext_resource type="AudioStream" uid="uid://cu5lmg62g53yi" path="res://Sounds/footstepGrave1.mp3" id="3_q1lk7"]
+[ext_resource type="PackedScene" uid="uid://ccj2p1nrqhmxo" path="res://Models/minecraft_diamond-pickaxe.glb" id="4_22q2l"]
+[ext_resource type="PackedScene" uid="uid://40s2ktnoti8w" path="res://linterna.tscn" id="4_c1joy"]
+[ext_resource type="Script" path="res://Player/raycast.gd" id="5_40vbv"]
+[ext_resource type="PackedScene" uid="uid://dw7pe2pkp0ugv" path="res://linterna_2.tscn" id="5_a1jaq"]
+[ext_resource type="PackedScene" uid="uid://dv1rnjlnwoevf" path="res://Player/HUD/hud.tscn" id="10_1qtp3"]
+[ext_resource type="Texture2D" uid="uid://corbm8pssuj6a" path="res://pngs/llavesPNG.png" id="11_5eqq3"]
+[ext_resource type="Texture2D" uid="uid://cop4bv7562npv" path="res://pngs/inventarioCuadricula.png" id="11_si3gf"]
+[ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="12_7ic3v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mg5sh"]
+size = Vector3(1, 1.08706, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uhlcm"]
+font = ExtResource("12_7ic3v")
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_4yuhw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.8, 1.2, 0.8)]
+}
+
+[sub_resource type="Animation" id="Animation_vsima"]
+resource_name = "agacharse"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.8, 1.2, 0.8), Vector3(0.8, 0.6, 0.8)]
+}
+
+[sub_resource type="Animation" id="Animation_bwdtf"]
+resource_name = "headbob"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0), Vector3(0, 0.58, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_play_footsteps_audio"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ucags"]
+resource_name = "headbobrunning"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0), Vector3(0, 0.58, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.15, 0.45),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_play_footsteps_audio"
+}, {
+"args": [],
+"method": &"_play_footsteps_audio"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_5aac7"]
+resource_name = "horse"
+
+[sub_resource type="Animation" id="Animation_f420e"]
+resource_name = "levantarse"
+length = 0.25
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck/Primerpersona")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ceo3h"]
+_data = {
+"RESET": SubResource("Animation_4yuhw"),
+"agacharse": SubResource("Animation_vsima"),
+"headbob": SubResource("Animation_bwdtf"),
+"headbobrunning": SubResource("Animation_ucags"),
+"horse": SubResource("Animation_5aac7"),
+"levantarse": SubResource("Animation_f420e")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_61tfb"]
+font = ExtResource("12_7ic3v")
+font_size = 26
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_fue28"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_eejop"]
+resource_name = "fadein"
+length = 0.25
+
+[sub_resource type="Animation" id="Animation_jqb10"]
+resource_name = "fadeout"
+length = 3.0
+
+[sub_resource type="Animation" id="Animation_s7i74"]
+resource_name = "fadeoutscne"
+length = 0.25
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h2ktm"]
+_data = {
+"RESET": SubResource("Animation_fue28"),
+"fadein": SubResource("Animation_eejop"),
+"fadeout": SubResource("Animation_jqb10"),
+"fadeoutscne": SubResource("Animation_s7i74")
+}
+
+[node name="jugador" type="CharacterBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 1.2, 0, 0, 0, 0.8, 0, 0.5, 0)
+script = ExtResource("1_tkee0")
+
+[node name="ColisionDePie" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_mg5sh")
+
+[node name="neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="randomShit" type="Node3D" parent="neck"]
+visible = false
+
+[node name="moto" parent="neck/randomShit" instance=ExtResource("2_ke1wf")]
+transform = Transform3D(2.02655, 0, 0, 0, 1, 0, 0, 0, 1.42962, 0, -0.875975, -0.524533)
+visible = false
+
+[node name="pico" parent="neck/randomShit" instance=ExtResource("4_22q2l")]
+transform = Transform3D(-1.23289e-09, -0.0207434, 0.0131306, 0.03, -9.64419e-10, 6.57148e-17, 4.46763e-10, 0.00751679, 0.0362353, 0.491916, -0.281707, -1.10479)
+visible = false
+
+[node name="Primerpersona" type="Camera3D" parent="neck"]
+transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
+cull_mask = 1047583
+
+[node name="sombrero" parent="neck/Primerpersona" instance=ExtResource("2_uqwep")]
+transform = Transform3D(-0.559987, -0.00106194, 0.000418952, 0.00556964, -0.239986, -0.00717742, 0.000450686, -0.0013663, 0.559979, 0.0983933, 0.463595, 0.145263)
+
+[node name="Luces" type="Node3D" parent="neck/Primerpersona"]
+transform = Transform3D(1, 0, 0, 0, 0.990346, 0.13862, 0, -0.13862, 0.990346, -0.00347628, -0.031383, 0.0262647)
+
+[node name="linternaApagada" parent="neck/Primerpersona/Luces" instance=ExtResource("5_a1jaq")]
+transform = Transform3D(-0.0973182, -0.022467, 0.00493998, -0.00941338, 0.0193003, -0.0976672, 0.0209894, -0.095513, -0.0208976, 0.323, -0.103, -0.267)
+visible = false
+
+[node name="linternaEncendida" parent="neck/Primerpersona/Luces" instance=ExtResource("4_c1joy")]
+transform = Transform3D(-0.0973001, -0.0225443, 0.00494416, -0.00944506, 0.0193479, -0.0976547, 0.021059, -0.0954852, -0.0209548, 0.322769, -0.103001, -0.267275)
+
+[node name="lamparaMasLejos" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
+transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.30241, -0.0284415, -0.637788)
+light_color = Color(0.975706, 0.811676, 0.465673, 1)
+light_energy = 25.0
+light_indirect_energy = 5.0
+light_volumetric_fog_energy = 20.0
+shadow_enabled = true
+spot_range = 25.0
+spot_angle = 8.73653
+
+[node name="lamparaLejos" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
+transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.30241, -0.0290411, -0.635688)
+light_color = Color(0.988429, 0.872645, 0.637451, 1)
+light_energy = 10.0
+light_indirect_energy = 2.2
+light_volumetric_fog_energy = 20.0
+shadow_enabled = true
+spot_range = 20.0
+spot_angle = 17.9965
+
+[node name="lamparaCerca" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
+transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.292604, -0.0312145, -0.637748)
+light_color = Color(0.860089, 0.874195, 0.755272, 1)
+light_energy = 5.0
+light_indirect_energy = 0.8
+light_volumetric_fog_energy = 20.0
+shadow_enabled = true
+spot_range = 10.0
+spot_angle = 35.4343
+
+[node name="RayCast3D" type="RayCast3D" parent="neck/Primerpersona"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.341452)
+target_position = Vector3(0, -2, 0)
+script = ExtResource("5_40vbv")
+
+[node name="Label" type="Label" parent="neck/Primerpersona/RayCast3D"]
+visible = false
+offset_left = 905.0
+offset_top = 567.0
+offset_right = 1016.0
+offset_bottom = 590.0
+text = "Interact (E)"
+label_settings = SubResource("LabelSettings_uhlcm")
+
+[node name="InventarioCuadricula" type="Sprite2D" parent="neck/Primerpersona/RayCast3D"]
+position = Vector2(282, 955)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("11_si3gf")
+
+[node name="LlavesPng" type="Sprite2D" parent="neck/Primerpersona/RayCast3D/InventarioCuadricula"]
+visible = false
+position = Vector2(-186, -5)
+scale = Vector2(0.122076, 0.150939)
+texture = ExtResource("11_5eqq3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="neck"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ceo3h")
+}
+
+[node name="audio" type="Node3D" parent="neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="footsteps" type="AudioStreamPlayer3D" parent="neck/audio"]
+transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
+stream = ExtResource("2_8gjgm")
+volume_db = -42.0
+
+[node name="jumpstep" type="AudioStreamPlayer3D" parent="neck/audio"]
+stream = ExtResource("3_q1lk7")
+volume_db = -42.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 881.0
+offset_top = 481.0
+offset_right = 1192.0
+offset_bottom = 548.0
+scale = Vector2(0.5, 0.5)
+text = "Press left or right
+   click to start"
+label_settings = SubResource("LabelSettings_61tfb")
+
+[node name="HUD" parent="." instance=ExtResource("10_1qtp3")]
+script = null
+
+[node name="Transition" type="AnimationPlayer" parent="HUD"]
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_h2ktm")
+}

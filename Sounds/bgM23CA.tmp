@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bceq1e21vr67i"]
+
+[ext_resource type="AudioStream" uid="uid://b2bh55txwbttu" path="res://Sounds/Eerie-Abandoned-Haunted-Underground-Bunker-Ambience-_TW_-occasional-screams_-Horror-Ambience-__.ogg" id="1_6wai2"]
+[ext_resource type="Script" path="res://Sounds/bgMusic.gd" id="2_dpfbx"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_6wai2")
+volume_db = -10.306
+autoplay = true
+parameters/looping = true
+script = ExtResource("2_dpfbx")

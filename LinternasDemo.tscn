@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://poio1yst34ai"]
+
+[ext_resource type="PackedScene" uid="uid://chc76265s2t1t" path="res://linterno.tscn" id="1_e2foq"]
+
+[node name="Linternas" type="Node3D"]
+
+[node name="linterno2" parent="." instance=ExtResource("1_e2foq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 272.062, 9.53674e-07, 203.012)
+
+[node name="linterno5" parent="." instance=ExtResource("1_e2foq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 292.409, 0, 211.55)
+
+[node name="linterno8" parent="." instance=ExtResource("1_e2foq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 298.986, 0, 221.188)
+
+[node name="linterno10" parent="." instance=ExtResource("1_e2foq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 282.083, 0, 211.887)

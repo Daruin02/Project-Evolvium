@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7xfcerglkcam"]
+
+[ext_resource type="Script" path="res://LoadingScreen.gd" id="1_m21ly"]
+[ext_resource type="VideoStream" path="res://VideoCarga.ogv" id="2_oheen"]
+[ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="3_fh1no"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wf7jf"]
+font = ExtResource("3_fh1no")
+font_size = 24
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_twomb"]
+font = ExtResource("3_fh1no")
+font_size = 48
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m21ly")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1088.0
+stream = ExtResource("2_oheen")
+autoplay = true
+
+[node name="countDown" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1654.0
+offset_top = 949.0
+offset_right = 1721.06
+offset_bottom = 983.0
+scale = Vector2(2, 2)
+label_settings = SubResource("LabelSettings_wf7jf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1322.0
+offset_top = 949.0
+offset_right = 1585.0
+offset_bottom = 1016.0
+text = "Cargando..."
+label_settings = SubResource("LabelSettings_twomb")

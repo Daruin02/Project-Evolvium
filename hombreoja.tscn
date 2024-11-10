@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj7xeanlrgeao"]
+
+[ext_resource type="PackedScene" uid="uid://bqjn3rescqmht" path="res://Models/HOMBRE_HOJA_aplha_optimizado.glb" id="1_mtlfj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3qtwn"]
+size = Vector3(18.4453, 5.8468, 2.30444)
+
+[node name="HOMBRE_HOJA_aplha_optimizado" instance=ExtResource("1_mtlfj")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="monitosincabeza/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999997, 0, 0, 0, 0.999964, 4.18408, 0.0167846, 0.024779)
+shape = SubResource("BoxShape3D_3qtwn")

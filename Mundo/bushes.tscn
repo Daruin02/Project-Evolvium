@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=3 uid="uid://cu0tp4uwr5o1r"]
+
+[ext_resource type="Texture2D" uid="uid://bk7nop4mwx4yq" path="res://pngs/dead_forest_png_1_by_gareng92_ddb6vab.png" id="1_58o7r"]
+[ext_resource type="Texture2D" uid="uid://bjo4qjgeya38b" path="res://pngs/dead-tree-silhouette-7 (1).png" id="2_vxb8c"]
+[ext_resource type="Texture2D" uid="uid://cg1b1kr776sgm" path="res://pngs/arbolito2.png" id="4_c1i12"]
+[ext_resource type="Texture2D" uid="uid://cosgr0orpb1sy" path="res://pngs/dead_tree_png_by_gd08_d3hs9tf-fullview.png" id="5_4tvju"]
+[ext_resource type="Texture2D" uid="uid://bj0a8ealvnooy" path="res://pngs/dead-tree-on-transparent-background-png.png" id="6_s4sl6"]
+[ext_resource type="Texture2D" uid="uid://b00wawc7lf0el" path="res://pngs/arbolito4.png" id="7_x7bdi"]
+[ext_resource type="Texture2D" uid="uid://cnsh5pbrq211v" path="res://cabalho/caballo.png" id="8_ndhih"]
+
+[node name="bushes" type="Node"]
+
+[node name="bosque 1" type="Sprite3D" parent="."]
+transform = Transform3D(0.339747, 0, 0.134935, 0, 0.385508, 0, -0.217829, 0, 0.210458, 70.5337, 0.866149, 28.1603)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol1" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(1.04295, 0, -0.668689, 0, 1.29699, 0, 1.07948, 0, 1.68366, -22.6321, 0.757003, -11.0141)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol6" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(-0.556153, -0.00188719, 0.708194, -0.000210326, 1.06568, 0.00141621, -1.37189, 0.000601684, -0.287098, -40.2978, -0.32999, -36.2917)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="bosque2" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(0.15158, 0, 0.381079, 0, 0.676951, 0, -1.13398, 0, 0.132748, 45.4221, 0.745305, -50.7773)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol7" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(-0.479385, 0.00824316, 0.291799, -0.0165954, 0.522461, -0.0295743, -0.540767, -0.0574855, -0.522684, 6.37274, 11.4495, -36.1339)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol2" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(0.665059, 0.0110098, -0.0542169, -0.00670977, 0.635769, 0.0641852, 0.124943, -0.0715394, 1.33461, 20.4189, 12.1029, -28.0221)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol3" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(0.360957, 0, 0.441957, 0, 0.495889, 0, -0.585904, 0, 0.70956, 39.7006, 0.547877, -34.0821)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbol8" type="Sprite3D" parent="bosque 1"]
+transform = Transform3D(-0.474006, -1.68688e-05, -0.0122311, -0.000105163, 0.53284, 0.000708107, 0.294119, 0.00155246, -0.589045, 28.5267, 0.579939, -21.7813)
+shaded = true
+texture = ExtResource("1_58o7r")
+
+[node name="arbolesbosque2" type="Sprite3D" parent="."]
+transform = Transform3D(-0.0327308, -3.80756e-12, 0.0925691, 5.95466e-13, 0.298594, 1.22729e-12, -0.270789, -1.92676e-12, -0.011189, 81.3693, 2.24473, 10.2638)
+shaded = true
+texture = ExtResource("2_vxb8c")
+
+[node name="horse" type="Sprite3D" parent="."]
+transform = Transform3D(0.2, 0, 9.31322e-09, 0, 0.3, 0, -9.31322e-09, 0, 0.2, 60.3501, 1.22472, 27.0516)
+shaded = true
+texture = ExtResource("8_ndhih")
+
+[node name="arbol458" type="Sprite3D" parent="."]
+transform = Transform3D(-0.338958, 4.87767e-06, -0.212383, -0.000111682, 0.4, 0.000187428, 0.212384, 0.000218122, -0.338958, 64.9832, 1.28965, 25.7592)
+shaded = true
+texture = ExtResource("4_c1i12")
+
+[node name="arbol7" type="Sprite3D" parent="."]
+transform = Transform3D(0.859984, 0, 0.510317, 0, 1, 0, -0.510316, 0, 0.859986, 64.7332, 3.23246, 27.5043)
+shaded = true
+texture = ExtResource("5_4tvju")
+
+[node name="arbol8" type="Sprite3D" parent="."]
+transform = Transform3D(0.660452, 0, -0.451444, 0, 1.2, 0, 0.451443, 0, 0.660453, 58.0679, 2.13422, 24.8012)
+shaded = true
+texture = ExtResource("6_s4sl6")
+
+[node name="arbol459" type="Sprite3D" parent="."]
+transform = Transform3D(0.179961, 5.41479e-05, -0.0872559, -4.25541e-05, 0.2, 3.63475e-05, 0.0872561, -1.4141e-05, 0.179962, 57.7671, 2.73629, 27.1661)
+shaded = true
+texture = ExtResource("7_x7bdi")
+
+[node name="arbol6" type="Sprite3D" parent="."]
+transform = Transform3D(0.187161, -1.2402e-11, 0.141241, 4.71738e-12, 0.97258, 2.30161e-12, -0.550222, -6.27584e-12, 0.0480438, 80.1528, 1.86589, 12.9325)
+shaded = true
+texture = ExtResource("6_s4sl6")
+
+[node name="arbol9" type="Sprite3D" parent="."]
+transform = Transform3D(-0.0623303, -2.51312e-12, 0.369976, 1.42136e-13, 0.197082, 4.56804e-12, -0.232913, -1.27173e-12, -0.0990104, 80.2855, 1.03769, 8.89415)
+shaded = true
+texture = ExtResource("4_c1i12")
+
+[node name="arbol10" type="Sprite3D" parent="."]
+transform = Transform3D(-0.269571, -7.61512e-12, 0.162126, -9.77418e-13, 0.597188, 1.7109e-12, -0.474261, -3.85352e-12, -0.0921528, 79.4501, 1.8737, 7.72596)
+shaded = true
+texture = ExtResource("5_4tvju")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.394745, 0, 0.0646278, 0, 0.4, 0, -0.0646278, 0, 0.394745, 61.7544, 3.06243, 29.1803)
+texture = ExtResource("2_vxb8c")

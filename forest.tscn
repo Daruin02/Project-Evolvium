@@ -1,0 +1,305 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2ootvnb07k66"]
+
+[ext_resource type="Material" uid="uid://67ujeeqcjmgj" path="res://trunk_mat.tres" id="1_s6rxx"]
+[ext_resource type="Material" uid="uid://7hn25igvds42" path="res://twig_mat.tres" id="2_by2tp"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1jq1c"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Tree3D" type="Tree3D" parent="."]
+trunk_climb_rate = 1.2
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.174508)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D2" type="Tree3D" parent="."]
+seed = 232
+trunk_climb_rate = 1.1
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6817, 0, 9.65943)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D2/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D3" type="Tree3D" parent="."]
+seed = 53412
+trunk_climb_rate = 0.98
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(0.997377, 0, 0, 0, 0.997377, 0, 0, 0, 0.997377, 19.5011, 0, 7.0871)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D3/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D4" type="Tree3D" parent="."]
+seed = 585
+trunk_climb_rate = 1.08
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2857, 0, 0.743134)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D4/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D5" type="Tree3D" parent="."]
+seed = 439
+trunk_climb_rate = 0.93
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3335, 0, 4.629)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D5/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D6" type="Tree3D" parent="."]
+seed = 3333
+trunk_climb_rate = 1.04
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(0.997377, 0, 0, 0, 0.997377, 0, 0, 0, 0.997377, 14.7346, 0, -3.44598)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D6/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D7" type="Tree3D" parent="."]
+seed = 1220
+trunk_climb_rate = 1.12
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(0.997377, 0, 0, 0, 0.997377, 0, 0, 0, 0.997377, 7.3971, 0, 4.42741)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D7/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D8" type="Tree3D" parent="."]
+seed = 905
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38375, 0, 5.80683)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D8/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D9" type="Tree3D" parent="."]
+seed = 4144
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19.5906)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D9/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D10" type="Tree3D" parent="."]
+seed = 51351
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.196762, 0, 12.5879)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D10"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D10/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D11" type="Tree3D" parent="."]
+seed = 2002
+trunk_climb_rate = 1.24
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(0.997377, 0, 0, 0, 0.997377, 0, 0, 0, 0.997377, -2.92524, 0, 9.17063)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D11"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D11/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D12" type="Tree3D" parent="."]
+seed = 321
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.90199, 0, 4.18697)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D12"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D12/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D13" type="Tree3D" parent="."]
+seed = 999
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(0.997377, 0, 0, 0, 0.997377, 0, 0, 0, 0.997377, -3.67276, 0, 14.5372)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D13"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D13/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000476837, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D14" type="Tree3D" parent="."]
+seed = 888
+trunk_climb_rate = 0.9
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0913, 0, 15.5638)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D14"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D14/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000476837, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D16" type="Tree3D" parent="."]
+seed = 112
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8357, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D16"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D16/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D17" type="Tree3D" parent="."]
+seed = 100000
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.21926, 0, 9.4005)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D17"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D17/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D18" type="Tree3D" parent="."]
+seed = 100000
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.39551, 0, 11.4068)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D18"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D18/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D19" type="Tree3D" parent="."]
+seed = 581
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.76824, 0, -1.70524)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D19"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D19/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D20" type="Tree3D" parent="."]
+seed = 44
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.27414, 0, -0.123991)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D20"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D20/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D21" type="Tree3D" parent="."]
+seed = 44
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5277, 0, 19.4439)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D21"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D21/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D22" type="Tree3D" parent="."]
+seed = 44
+trunk_climb_rate = 0.87
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.57444, 0, 20.6338)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D22"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D22/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D23" type="Tree3D" parent="."]
+seed = 44
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.77523, 0, 7.65717)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D23"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D23/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D24" type="Tree3D" parent="."]
+seed = 44
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0819, 0, 15.3671)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D24"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D24/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")
+
+[node name="Tree3D25" type="Tree3D" parent="."]
+seed = 44
+material_trunk = ExtResource("1_s6rxx")
+material_twig = ExtResource("2_by2tp")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6159, 0, 16.4165)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree3D25"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree3D25/StaticBody3D"]
+transform = Transform3D(0.329878, 0, 0, 0, 2.5172, 0, 0, 0, 0.346001, -0.000477254, 1.33399, 0.0166687)
+shape = SubResource("CapsuleShape3D_1jq1c")

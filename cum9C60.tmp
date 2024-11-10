@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://ctfeof1dygtm3"]
+
+[ext_resource type="Script" path="res://cumjar.gd" id="1_k2pvq"]
+[ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="2_wa62d"]
+[ext_resource type="PackedScene" uid="uid://dd0lj7r8xcrgk" path="res://jar.tscn" id="4_bms58"]
+[ext_resource type="PackedScene" uid="uid://cctcgwm7ct6dj" path="res://mikubrazil.tscn" id="4_c60kn"]
+[ext_resource type="AudioStream" uid="uid://uw0qhqbykj6u" path="res://Sounds/monachina.ogg" id="4_egtnh"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_t21kq"]
+radius = 0.224238
+
+[sub_resource type="LabelSettings" id="LabelSettings_iixra"]
+font = ExtResource("2_wa62d")
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="CUMJAR" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194.725, 1.34096, 211.416)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+script = ExtResource("1_k2pvq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("SphereShape3D_t21kq")
+
+[node name="Timer" type="Timer" parent="StaticBody3D"]
+one_shot = true
+
+[node name="Nyah" type="Label" parent="StaticBody3D"]
+visible = false
+offset_left = 925.0
+offset_top = 600.0
+offset_right = 996.0
+offset_bottom = 623.0
+text = "Nyah!~~"
+label_settings = SubResource("LabelSettings_iixra")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="StaticBody3D"]
+stream = ExtResource("4_egtnh")
+volume_db = -45.0
+
+[node name="Sketchfab_Scene2" parent="StaticBody3D" instance=ExtResource("4_bms58")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.71295, -0.176162, -0.00169373)
+
+[node name="Sketchfab_Scene" parent="StaticBody3D" instance=ExtResource("4_c60kn")]
+transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0.000930786, -0.158737, 0.012207)
+
+[connection signal="timeout" from="StaticBody3D/Timer" to="StaticBody3D" method="_on_timer_timeout"]

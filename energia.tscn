@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct5ksxs26hi6l"]
+
+[ext_resource type="Script" path="res://Player/HUD/energia.gd" id="1_fale2"]
+[ext_resource type="Texture2D" uid="uid://pbgclv58r7vq" path="res://Player/HUD/bright2.png" id="2_nr2f2"]
+[ext_resource type="Texture2D" uid="uid://bl7nfx3tw12jb" path="res://Player/HUD/barraenergiaUnder2.png" id="3_8ds21"]
+[ext_resource type="Texture2D" uid="uid://quw3n06io72f" path="res://Player/HUD/barraenergiaUp2.png" id="4_rcjyp"]
+
+[node name="energia" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fale2")
+
+[node name="bright2" type="Sprite2D" parent="."]
+position = Vector2(1040, 45.0028)
+rotation = -1.5708
+scale = Vector2(0.474229, 1.30433)
+texture = ExtResource("2_nr2f2")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = -26.6665
+offset_top = -35.0001
+offset_right = 1893.33
+offset_bottom = 125.0
+max_value = 300.0
+value = 300.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_8ds21")
+texture_over = ExtResource("4_rcjyp")

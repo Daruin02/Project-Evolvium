@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2y86lpgjs021"]
+
+[ext_resource type="PackedScene" uid="uid://8qxlu52rhwbx" path="res://Models/velita.glb" id="1_fsqjd"]
+
+[node name="velita" instance=ExtResource("1_fsqjd")]

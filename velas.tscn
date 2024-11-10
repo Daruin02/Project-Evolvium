@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn1dh7skklg4q"]
+
+[ext_resource type="PackedScene" uid="uid://dkmlffg6l43et" path="res://Models/velita (1).glb" id="1_4tpml"]
+
+[node name="Velas" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 281.707, 0, 203.98)
+
+[node name="velita (1)" parent="." instance=ExtResource("1_4tpml")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.149933, -1.19209e-07, -0.0929871)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="velita (1)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.433109, 0)
+light_color = Color(0.989307, 0.682511, 7.70092e-07, 1)
+
+[node name="velita (1)2" parent="." instance=ExtResource("1_4tpml")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1, 0.0994263, 0, 0.233093)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="velita (1)2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449952, 0)
+light_color = Color(0.989307, 0.682511, 7.70092e-07, 1)
+
+[node name="velita (1)3" parent="." instance=ExtResource("1_4tpml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.224243, 0, -0.0267181)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="velita (1)3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428128, 0)
+light_color = Color(0.989307, 0.682511, 7.70092e-07, 1)

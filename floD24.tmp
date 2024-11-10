@@ -1,0 +1,77 @@
+[gd_scene load_steps=15 format=3 uid="uid://d0pu8lm8nu6jc"]
+
+[ext_resource type="Terrain3DStorage" uid="uid://ckbftudwaytrc" path="res://grassTerrain2.tres" id="1_e628c"]
+[ext_resource type="Texture2D" path="res://ground_alb_ht.dds" id="2_j1ep0"]
+[ext_resource type="Texture2D" path="res://ground_n_rgh.dds" id="3_mnbcs"]
+[ext_resource type="Texture2D" path="res://grass_alb_ht.dds" id="4_65b4p"]
+[ext_resource type="Texture2D" path="res://grass_n_rgh.dds" id="5_l5ajp"]
+
+[sub_resource type="Gradient" id="Gradient_q4anv"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ltiga"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8jtg1"]
+seamless = true
+color_ramp = SubResource("Gradient_q4anv")
+noise = SubResource("FastNoiseLite_ltiga")
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_btbc6"]
+_shader_parameters = {
+"blend_sharpness": 0.87,
+"height_blending": true,
+"macro_variation1": Color(1, 1, 1, 1),
+"macro_variation2": Color(1, 1, 1, 1),
+"noise1_angle": 0.0,
+"noise1_offset": Vector2(0.5, 0.5),
+"noise1_scale": 0.04,
+"noise2_scale": 0.076,
+"noise3_scale": 0.225,
+"noise_texture": SubResource("NoiseTexture2D_8jtg1"),
+"vertex_normals_distance": 128.0
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rory4"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_4t5ku"]
+height_offset = 0.5
+density = 10.0
+material_override = SubResource("StandardMaterial3D_rory4")
+generated_type = 1
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_4mh6r"]
+name = "ground_alb_ht"
+albedo_texture = ExtResource("2_j1ep0")
+normal_texture = ExtResource("3_mnbcs")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_2cifd"]
+name = "grass_alb_ht"
+id = 1
+albedo_texture = ExtResource("4_65b4p")
+normal_texture = ExtResource("5_l5ajp")
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_0bbeb"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_4t5ku")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_4mh6r"), SubResource("Terrain3DTextureAsset_2cifd")])
+
+[node name="floor" type="Node3D"]
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+storage = ExtResource("1_e628c")
+material = SubResource("Terrain3DMaterial_btbc6")
+assets = SubResource("Terrain3DAssets_0bbeb")
