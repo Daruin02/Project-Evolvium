@@ -1,14 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://jhctuqasgpnc"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_lar4e"]
-rayleigh_color = Color(0.641968, 0.814281, 0.895857, 1)
-mie_coefficient = 0.02
+rayleigh_color = Color(0.956863, 0.670588, 0.411765, 1)
+mie_coefficient = 0.1
 mie_eccentricity = 0.95
-mie_color = Color(0.736727, 0.748696, 0.514729, 1)
+mie_color = Color(0.929412, 0.67451, 0.196078, 1)
 turbidity = 20.0
 
 [sub_resource type="Sky" id="Sky_7713u"]
 sky_material = SubResource("PhysicalSkyMaterial_lar4e")
+process_mode = 1
 
 [sub_resource type="Environment" id="Environment_185f5"]
 background_mode = 2
@@ -32,8 +33,9 @@ volumetric_fog_sky_affect = 0.3
 environment = SubResource("Environment_185f5")
 
 [node name="SunLight" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.569466, -0.0892232, -0.817159, 0.777191, -0.265343, 0.570585, -0.267737, -0.960017, -0.081761, 308.725, 246.574, 0)
-light_energy = 0.2
+transform = Transform3D(0.345925, -0.0513496, -0.936856, 0.895695, -0.279269, 0.346033, -0.279403, -0.958839, -0.0506123, 308.725, 246.574, 0)
+light_color = Color(0.835294, 0.698039, 0.45098, 1)
+light_energy = 0.6
 light_bake_mode = 1
 shadow_enabled = true
-shadow_blur = 1.5
+shadow_blur = 2.0

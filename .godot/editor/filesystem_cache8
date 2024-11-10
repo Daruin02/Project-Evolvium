@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731220682
+::res://::1731226711
 360_F_278776572_zH2spb9z2lYg0pvSi7dWjVvkCwZW9XPz.jpg::CompressedTexture2D::1092402406246481692::1731205693::1731205949::1::::<><>::
 aldric-rivat-jAy_cHc8wDQ-unsplash.jpg::CompressedTexture2D::2185816097216402531::1731205705::1731205952::1::::<><>::
-ambiente_dia.tscn::PackedScene::646306676298617032::1731205706::0::1::::<><>::
+ambiente_dia.tscn::PackedScene::646306676298617032::1731223398::0::1::::<><>::
 ambiente_noche.tscn::PackedScene::7642267387740413781::1731205706::0::1::::<><>::
 arboles_2.tscn::PackedScene::7102697082450620703::1731205706::0::1::::<><>::uid://b2ootvnb07k66::::res://forest.tscn
 arboles_castillo.tscn::PackedScene::8580544573258729309::1731205706::0::1::::<><>::uid://b2ootvnb07k66::::res://forest.tscn
@@ -40,7 +40,7 @@ farol.tscn::PackedScene::1752811174494702357::1731205710::0::1::::<><>::
 forest.tscn::PackedScene::4311305841612660437::1731205710::0::1::::<><>::uid://67ujeeqcjmgj::::res://trunk_mat.tres<>uid://7hn25igvds42::::res://twig_mat.tres
 fortnite.otf::FontFile::2249284082431628111::1731205710::1731205945::1::::<><>::
 grass.png::CompressedTexture2D::2570544317700813473::1731205710::1731205952::1::::<><>::
-grassTerrain2.res::Terrain3DStorage::1106905148907800301::1731220497::0::1::::<><>::
+grassTerrain2.res::Terrain3DStorage::1106905148907800301::1731222377::0::1::::<><>::
 grassTerrain2.tres::Terrain3DStorage::5477132752670572368::1731205711::0::1::::<><>::
 grassTerrain.res::Terrain3DStorage::3910467175117689169::1731205711::0::1::::<><>::
 grass_alb_ht.dds::ImageTexture::-1::1731205711::0::1::::<><>::
@@ -74,7 +74,7 @@ mat.tres::StandardMaterial3D::4797107725653612346::1731205715::0::1::::<><>::uid
 mat_leaf.tres::StandardMaterial3D::1717390284665679374::1731205715::0::1::::<><>::uid://m1u2modj3203::::res://twig.png
 menu.gd::GDScript::-1::1731205716::0::1::::<>Control<>::
 menu.tres::Theme::1977440589117609209::1731205716::0::1::::<><>::
-menu.tscn::PackedScene::2029107351918171750::1731216740::0::1::::<><>::res://menu.gd<>uid://cp1lj2bjqdkyr::::res://pngs/menu.png<>uid://x7trma8urf7e::::res://Fonts/Mom«t___.ttf
+menu.tscn::PackedScene::2029107351918171750::1731223463::0::1::::<><>::res://menu.gd<>uid://cp1lj2bjqdkyr::::res://pngs/menu.png<>uid://x7trma8urf7e::::res://Fonts/Mom«t___.ttf
 menu_de_pausa.gd::GDScript::-1::1731205716::0::1::::<>Control<>::
 menu_de_pausa.gdshader::Shader::-1::1731205716::0::1::::<><>::
 menu_de_pausa.tscn::PackedScene::3986634397418801052::1731205716::0::1::::<><>::res://menu_de_pausa.gd<>res://menu_de_pausa.gdshader
@@ -83,7 +83,7 @@ mesajejejejeje.tscn::PackedScene::2717365035603784674::1731205716::0::1::::<><>:
 mikubrazil.tscn::PackedScene::4952575556247110051::1731205716::0::1::::<><>::uid://x8henyesgpog::::res://brazilian_hatsune_miku_0.png<>uid://bx4l71hmli0bf::::res://brazilian_hatsune_miku_1.png
 moto.tscn::PackedScene::6494176125577996410::1731205722::0::1::::<><>::uid://dqc2rkpfaaayq::::res://Models/motorcycle.glb
 motona.tscn::PackedScene::7937815488309996728::1731205723::0::1::::<><>::uid://dqc2rkpfaaayq::::res://Models/motorcycle.glb
-mundoNoche.tscn::PackedScene::5377190929340219881::1731216748::0::1::::<><>::res://Mundo/mundo.gd<>uid://ddl0ttx83v8jv::::res://Models/sword_runic_turbo_squid.blend<>uid://bhfs1icipm0hb::::res://Materials/puerta.tscn<>uid://dk7x1ndu5vw4e::::res://tuberia_2.tscn<>uid://cycaiflji6orl::::res://pozo_techumbre.tscn<>uid://ciftcmkaj8o7h::::res://tuberia.tscn<>uid://y8csq2uwr4ld::::res://farol.tscn<>uid://duiqkyx7nt1cj::::res://arboles_castillo.tscn<>uid://c8gunbarj3p7t::::res://arboles_2.tscn<>uid://xtvrli0tmmco::::res://arbol_loko.tscn<>uid://b8gpcordbbggs::::res://arbol_loko_2.tscn<>uid://be6nrf0b8j4l0::::res://assets/models/RockA.tscn<>uid://bwvtgwartxt0g::::res://assets/models/RockB.tscn<>uid://lsvs8a7urkca::::res://assets/models/RockC.tscn<>uid://8tw2by1cl651::::res://tilesethd.tres<>uid://p1gtinjjtpbh::::res://grassTerrain2.res<>uid://bci5tbyyr24nm::::res://Models/grass2.glb<>uid://c4ggdp0kg5wjk::::res://addons/simplegrasstextured/textures/grassbushcc008.png<>res://resources/gravel1.dds<>res://resources/gravel1n.dds<>res://grass_alb_ht.dds<>res://grass_n_rgh.dds<>res://resources/grass1.dds<>res://resources/grass1n.dds<>res://resources/grass2.dds<>res://resources/grass2n.dds<>res://ground_alb_ht.dds<>res://ground_n_rgh.dds<>res://resources/dirt1.dds<>res://resources/dirt1n.dds<>res://resources/dirt2.dds<>res://resources/dirt2n.dds<>res://resources/gravel2.dds<>res://resources/gravel2n.dds<>res://resources/moss1.dds<>res://resources/moss1n.dds<>res://resources/rock6.dds<>res://resources/rock6n.dds<>res://resources/rock2.dds<>res://resources/rock2n.dds<>res://resources/rock3.dds<>res://resources/rock3n.dds<>res://resources/rock4.dds<>res://resources/rock4n.dds<>res://resources/rock5.dds<>res://resources/rock5n.dds<>res://resources/rock7.dds<>res://resources/rock7n.dds<>res://resources/rockSands2.dds<>res://resources/rockSands2n.dds<>res://resources/rockSands.dds<>res://resources/rockSandsn.dds<>res://resources/sand2.dds<>res://resources/sand2n.dds<>res://resources/sand3.dds<>res://resources/sand3n.dds<>res://resources/stoneWay2.dds<>res://resources/stoneWay2n.dds<>res://resources/sand1.dds<>res://resources/sand1n.dds<>res://resources/rock1.dds<>res://resources/rock1n.dds<>uid://cqdvlb6cc1wmu::::res://Player/jugador.tscn<>uid://b466f3dqms8e8::::res://lroc_color_poles_1k.jpg<>uid://bgv5tqkdsnepx::::res://cielo2.jpg<>uid://o8sj6toil84g::::res://pngs/tabla.png<>uid://btm3eeiifg00j::::res://pngs/cruz.png<>uid://cbp44k3a8jfs1::::res://velas_castillo.tscn<>res://addons/simplegrasstextured/shaders/grass.gdshader<>res://addons/simplegrasstextured/grass.gd<>uid://bldxt5r8se2vr::::res://pngs/png-transparent-cut-flowers-plant-flower-leaf-branch-annual-plant.png<>uid://188s8g3joj3k::::res://pngs/family-tree-rose-flowerpot-garden-roses-bonsai-plants-seed-ornamental-plant-png-clipart.png<>uid://dy5cuxecywibu::::res://pngs/258-2589072_flower-plant-liked-on-polyvore-featuring-home.png<>uid://ca0wevg1lb4rx::::res://WaterMaker3D/WaterMaker3D.tscn<>uid://cfs2b0egldke::::res://Mundo/mundo.occ<>uid://cp05ockbx4rhv::::res://ventana.tscn<>uid://dy8ro1n7gvq8x::::res://Mundo/pause_menu.tscn<>uid://b1qv5fyopeyky::::res://Mundo/mundoNoche.VoxelGI_data.res<>uid://c0rp83mq3ndxo::::res://cobertizo.tscn<>uid://beykutr2roebq::::res://mesajejejejeje.tscn<>uid://ctfeof1dygtm3::::res://cumjar.tscn<>uid://lbju2u3n6kq2::::res://llaves.tscn<>uid://c1hf23eaaih54::::res://azulejos.jpg<>uid://dg48a6ub323i4::::res://ambiente_noche.tscn
+mundoNoche.tscn::PackedScene::5377190929340219881::1731223169::0::1::::<><>::res://Mundo/mundo.gd<>uid://ddl0ttx83v8jv::::res://Models/sword_runic_turbo_squid.blend<>uid://bhfs1icipm0hb::::res://Materials/puerta.tscn<>uid://dk7x1ndu5vw4e::::res://tuberia_2.tscn<>uid://cycaiflji6orl::::res://pozo_techumbre.tscn<>uid://ciftcmkaj8o7h::::res://tuberia.tscn<>uid://y8csq2uwr4ld::::res://farol.tscn<>uid://duiqkyx7nt1cj::::res://arboles_castillo.tscn<>uid://c8gunbarj3p7t::::res://arboles_2.tscn<>uid://xtvrli0tmmco::::res://arbol_loko.tscn<>uid://b8gpcordbbggs::::res://arbol_loko_2.tscn<>uid://be6nrf0b8j4l0::::res://assets/models/RockA.tscn<>uid://bwvtgwartxt0g::::res://assets/models/RockB.tscn<>uid://lsvs8a7urkca::::res://assets/models/RockC.tscn<>uid://8tw2by1cl651::::res://tilesethd.tres<>uid://p1gtinjjtpbh::::res://grassTerrain2.res<>uid://bci5tbyyr24nm::::res://Models/grass2.glb<>uid://c4ggdp0kg5wjk::::res://addons/simplegrasstextured/textures/grassbushcc008.png<>res://resources/gravel1.dds<>res://resources/gravel1n.dds<>res://grass_alb_ht.dds<>res://grass_n_rgh.dds<>res://resources/grass1.dds<>res://resources/grass1n.dds<>res://resources/grass2.dds<>res://resources/grass2n.dds<>res://ground_alb_ht.dds<>res://ground_n_rgh.dds<>res://resources/dirt1.dds<>res://resources/dirt1n.dds<>res://resources/dirt2.dds<>res://resources/dirt2n.dds<>res://resources/gravel2.dds<>res://resources/gravel2n.dds<>res://resources/moss1.dds<>res://resources/moss1n.dds<>res://resources/rock6.dds<>res://resources/rock6n.dds<>res://resources/rock2.dds<>res://resources/rock2n.dds<>res://resources/rock3.dds<>res://resources/rock3n.dds<>res://resources/rock4.dds<>res://resources/rock4n.dds<>res://resources/rock5.dds<>res://resources/rock5n.dds<>res://resources/rock7.dds<>res://resources/rock7n.dds<>res://resources/rockSands2.dds<>res://resources/rockSands2n.dds<>res://resources/rockSands.dds<>res://resources/rockSandsn.dds<>res://resources/sand2.dds<>res://resources/sand2n.dds<>res://resources/sand3.dds<>res://resources/sand3n.dds<>res://resources/stoneWay2.dds<>res://resources/stoneWay2n.dds<>res://resources/sand1.dds<>res://resources/sand1n.dds<>res://resources/rock1.dds<>res://resources/rock1n.dds<>uid://cqdvlb6cc1wmu::::res://Player/jugador.tscn<>uid://b466f3dqms8e8::::res://lroc_color_poles_1k.jpg<>uid://bgv5tqkdsnepx::::res://cielo2.jpg<>uid://o8sj6toil84g::::res://pngs/tabla.png<>uid://btm3eeiifg00j::::res://pngs/cruz.png<>uid://cbp44k3a8jfs1::::res://velas_castillo.tscn<>res://addons/simplegrasstextured/shaders/grass.gdshader<>res://addons/simplegrasstextured/grass.gd<>uid://bldxt5r8se2vr::::res://pngs/png-transparent-cut-flowers-plant-flower-leaf-branch-annual-plant.png<>uid://188s8g3joj3k::::res://pngs/family-tree-rose-flowerpot-garden-roses-bonsai-plants-seed-ornamental-plant-png-clipart.png<>uid://dy5cuxecywibu::::res://pngs/258-2589072_flower-plant-liked-on-polyvore-featuring-home.png<>uid://ca0wevg1lb4rx::::res://WaterMaker3D/WaterMaker3D.tscn<>uid://cfs2b0egldke::::res://Mundo/mundo.occ<>uid://cp05ockbx4rhv::::res://ventana.tscn<>uid://dy8ro1n7gvq8x::::res://Mundo/pause_menu.tscn<>uid://b1qv5fyopeyky::::res://Mundo/mundoNoche.VoxelGI_data.res<>uid://c0rp83mq3ndxo::::res://cobertizo.tscn<>uid://beykutr2roebq::::res://mesajejejejeje.tscn<>uid://ctfeof1dygtm3::::res://cumjar.tscn<>uid://lbju2u3n6kq2::::res://llaves.tscn<>uid://c1hf23eaaih54::::res://azulejos.jpg<>uid://dg48a6ub323i4::::res://ambiente_noche.tscn
 n&d_cycle.tscn::PackedScene::3352713605173091096::1731205742::0::1::::<><>::
 NavigationDemo.tscn::PackedScene::1673915473815048340::1731205742::0::1::::<><>::res://demo/src/DemoScene.gd<>uid://bb2lp50sjndus::::res://demo/components/World.tscn<>uid://dwnhqfjq7v1pq::::res://demo/components/Borders.tscn<>uid://domhm87hbhbg1::::res://demo/components/Player.tscn<>uid://djhl3foqkj4e2::::res://demo/components/Tunnel.tscn<>uid://d2jihfohphuue::::res://demo/components/UI.tscn<>uid://lalq1xnmbjdl::::res://demo/data/terrain_storage.res<>uid://yf3fu23666k8::::res://demo/data/nav_mesh.res<>uid://dal3jhw6241qg::::res://demo/data/assets.tres<>uid://di5fovhcyd7re::::res://demo/components/Enemy.tscn
 new_terrain_3d_assets.tres::Terrain3DAssets::8703692663536484933::1731205742::0::1::::<><>::
@@ -94,13 +94,13 @@ picos.tscn::PackedScene::8213900555813909400::1731205742::0::1::::<><>::
 pozo_techumbre.tscn::PackedScene::6461516936588782045::1731205747::0::1::::<><>::uid://c1hf23eaaih54::::res://azulejos.jpg<>uid://g58juwelp57x::::res://wooden-wood-backgrounds-textured-pattern-wallpaper-concept.jpg<>uid://6e3co73cjxp8::::res://aldric-rivat-jAy_cHc8wDQ-unsplash.jpg
 puerta.gd::GDScript::-1::1731205747::0::1::::<>StaticBody3D<>::
 puerta_puertaColorBase.png::CompressedTexture2D::7245999956034532322::1731205747::1731205952::1::::<><>::
-README.md::TextFile::-1::1731205747::0::1::::<><>::
+README.md::TextFile::-1::1731221092::0::1::::<><>::
 sombrero.tscn::PackedScene::8429428184429600052::1731205749::0::1::::<><>::
 sueloroca.jpeg::CompressedTexture2D::4739757020676826578::1731205750::1731205954::1::::<><>::
 teletransportador.gd::GDScript::-1::1731205750::0::1::::<>Area3D<>::
 tileseHD_atlas.png::CompressedTexture2D::3055933137543694097::1731205751::1731205952::1::::<><>::
 tileseHD_atlas_n.png::CompressedTexture2D::350939302939125846::1731205751::1731205952::1::::<><>::
-tilesethd.tres::MeshLibrary::2356839098441617866::1731220499::0::1::::<><>::uid://bjsk1i1nrx5yb::::res://tileseHD_atlas.png<>uid://e886iog76s7w::::res://tileseHD_atlas_n.png
+tilesethd.tres::MeshLibrary::2356839098441617866::1731222378::0::1::::<><>::uid://bjsk1i1nrx5yb::::res://tileseHD_atlas.png<>uid://e886iog76s7w::::res://tileseHD_atlas_n.png
 tilese_hd.tscn::PackedScene::1657204531695623526::1731205751::0::1::::<><>::uid://dd5lp4tbgcqoi::::res://Models/tileseHD.glb
 tree_3d.tscn::PackedScene::8568751310468574058::1731205751::0::1::::<><>::uid://bcvgqvxp1exv2::::res://grass.png<>uid://67ujeeqcjmgj::::res://trunk_mat.tres<>uid://7hn25igvds42::::res://twig_mat.tres<>uid://brlh4l4jfcfv4::::res://Branches1.png<>uid://c6im6wst02yp5::::res://Branches2.png<>uid://c4l0wkdeuloco::::res://Branches3.png
 trunk_mat.tres::StandardMaterial3D::2243144869912015597::1731205751::0::1::::<><>::uid://ddn22lc01q375::::res://bark.jpg<>uid://bdug6870wgmq::::res://bark_normal.png
@@ -257,7 +257,7 @@ LICENSE.txt::TextFile::-1::1731205704::0::1::::<><>::
 plugin.cfg::TextFile::-1::1731205704::0::1::::<><>::
 README.md::TextFile::-1::1731205704::0::1::::<><>::
 terrain.gdextension::GDExtension::-1::1731205705::0::1::::<><>::
-::res://addons/terrain_3d/bin/::1731220676
+::res://addons/terrain_3d/bin/::1731226703
 ::res://addons/terrain_3d/bin/libterrain.macos.debug.framework/::1731219879
 ::res://addons/terrain_3d/bin/libterrain.macos.release.framework/::1731219879
 ::res://addons/terrain_3d/extras/::1731219880
@@ -309,7 +309,7 @@ importer.tscn::PackedScene::3158990868267418980::1731205705::0::1::::<><>::res:/
 ::res://addons/terrain_3d/utils/::1731219880
 terrain_3d_objects.gd::GDScript::-1::1731205705::0::1::::Terrain3DObjects<>Node3D<>::
 transform_changed_notifier.gd::GDScript::-1::1731205705::0::1::::<>Node3D<>::
-::res://addons/tree3d/::1731220676
+::res://addons/tree3d/::1731226703
 libtree3d.gdextension::GDExtension::-1::1731205705::0::1::::<><>::
 ::res://addons/tree3d/ico/::1731219880
 Tree3D.png::CompressedTexture2D::4690256601663550150::1731205705::1731205957::1::::<><>::
@@ -319,13 +319,13 @@ M_crystal_blue.tres::StandardMaterial3D::372031320502569055::1731205706::0::1:::
 M_crystal_purple.tres::StandardMaterial3D::6066912994794361678::1731205706::0::1::::<><>::uid://br7bfxcxh60df::::res://demo/assets/textures/rock030_alb_ht.png<>uid://cr72kjil43vgj::::res://demo/assets/textures/rock030_nrm_rgh.png
 M_rock30.tres::StandardMaterial3D::7957307544442689234::1731205706::0::1::::<><>::uid://br7bfxcxh60df::::res://demo/assets/textures/rock030_alb_ht.png<>uid://cr72kjil43vgj::::res://demo/assets/textures/rock030_nrm_rgh.png
 M_rock30_tp.tres::StandardMaterial3D::7905614165749889619::1731205706::0::1::::<><>::uid://br7bfxcxh60df::::res://demo/assets/textures/rock030_alb_ht.png<>uid://cr72kjil43vgj::::res://demo/assets/textures/rock030_nrm_rgh.png
-::res://assets/models/::1731219881
+::res://assets/models/::1731223171
 beautiful-night-sky-with-shiny-stars.jpg::CompressedTexture2D::7810476865427708426::1731205707::1731205964::1::::<><>::
 Candle_low.fbx::PackedScene::752121985594654552::1731205707::1731205987::1::::<><>::
 CrystalC.tscn::PackedScene::5982640349226821032::1731205707::0::1::::<><>::uid://c8cx4xjwluvxw::::res://Models/RockC.glb<>uid://fkhkir6t1hml::::res://assets/materials/M_crystal_blue.tres
 RockA.tscn::PackedScene::2731991749350214203::1731205707::0::1::::<><>::uid://bxwiqxgwoh630::::res://Models/RockA.glb<>uid://dlmtxs0c66hj3::::res://assets/materials/M_rock30.tres
 RockB.tscn::PackedScene::3975092670503483564::1731205707::0::1::::<><>::uid://nta3sef6c2el::::res://Models/RockB.glb<>uid://dlmtxs0c66hj3::::res://assets/materials/M_rock30.tres
-RockC.tscn::PackedScene::810545015481710900::1731205707::0::1::::<><>::uid://c8cx4xjwluvxw::::res://Models/RockC.glb<>uid://dlmtxs0c66hj3::::res://assets/materials/M_rock30.tres
+RockC.tscn::PackedScene::810545015481710900::1731223171::0::1::::<><>::uid://c8cx4xjwluvxw::::res://Models/RockC.glb<>uid://dlmtxs0c66hj3::::res://assets/materials/M_rock30.tres
 Tunnel.tscn::PackedScene::1517361014733673259::1731205707::0::1::::<><>::uid://jib546bbort5::::res://Models/Tunnel.glb
 ::res://assets/textures/::1731219881
 asset_licenses.txt::TextFile::-1::1731205707::0::1::::<><>::
@@ -364,11 +364,12 @@ puerta.tscn::PackedScene::2889204238101389475::1731205715::0::1::::<><>::uid://2
 grass2.res::ArrayMesh::1249456202486309517::1731205716::0::1::::<><>::res://grass.gdshader
 grass.res::ArrayMesh::3047350888004943574::1731205988::0::1::::<><>::
 grassa.res::ArrayMesh::8583559269031302198::1731205716::0::1::::<><>::res://grass.gdshader
-::res://Models/::1731219886
+::res://Models/::1731226678
 Character.glb::PackedScene::50310665479634237::1731205716::1731205987::1::::<><>::uid://b5m071bq5s3km::::res://Models/Character_TwistedTorus Color base.png<>uid://cjhgdtgftjmg5::::res://Models/Character_Esfera geodésica Color base.png
 Character_Esfera geodésica Color base.png::CompressedTexture2D::5419362271210640050::1731205716::1731205965::1::::<><>::
 Character_TwistedTorus Color base.png::CompressedTexture2D::4518434964026613376::1731205716::1731205965::1::::<><>::
 cobertizo.glb::PackedScene::7633049185589443904::1731205716::1731205988::1::::<><>::
+Fridge.glb::PackedScene::5438207090144723921::1731226678::1731226729::1::::<><>::
 grass2.glb::PackedScene::2545168923581750178::1731205716::1731205988::1::::<><>::
 grass.glb::PackedScene::7164693628230690333::1731205716::1731205988::1::::<><>::uid://bjofoobbm1lyk::::res://Mesh/grass.res
 HOMBRE_HOJA_aplha_optimizado.glb::PackedScene::3528861804720781713::1731205717::1731205993::1::::<><>::
@@ -429,7 +430,7 @@ sword_color_texture.png::CompressedTexture2D::4962156567608975468::1731205721::1
 sword_emission_texture.png::CompressedTexture2D::4689275076575632775::1731205721::1731205968::1::::<><>::
 sword_normal_texture.png::CompressedTexture2D::6862345299378298152::1731205721::1731205967::1::::<><>::
 sword_roughness_texture.png::CompressedTexture2D::4722373721526427112::1731205722::1731205968::1::::<><>::
-::res://Mundo/::1731220502
+::res://Mundo/::1731224264
 bushes.tscn::PackedScene::6229409648866216189::1731205724::0::1::::<><>::uid://bk7nop4mwx4yq::::res://pngs/dead_forest_png_1_by_gareng92_ddb6vab.png<>uid://bjo4qjgeya38b::::res://pngs/dead-tree-silhouette-7 (1).png<>uid://cg1b1kr776sgm::::res://pngs/arbolito2.png<>uid://cosgr0orpb1sy::::res://pngs/dead_tree_png_by_gd08_d3hs9tf-fullview.png<>uid://bj0a8ealvnooy::::res://pngs/dead-tree-on-transparent-background-png.png<>uid://b00wawc7lf0el::::res://pngs/arbolito4.png<>uid://cnsh5pbrq211v::::res://cabalho/caballo.png
 cabalho.gd::GDScript::-1::1731205724::0::1::::<>CharacterBody3D<>::
 global.gd::GDScript::-1::1731205724::0::1::::<>Node<>::
@@ -438,7 +439,7 @@ icon.svg::CompressedTexture2D::8873286354892398847::1731205724::1731205954::1:::
 menu.png::CompressedTexture2D::7397057721563233270::1731205724::1731205955::1::::<><>::
 mundo.gd::GDScript::-1::1731205730::0::1::::<>Node3D<>::
 mundo.occ::ArrayOccluder3D::151840789685248604::1731205730::0::1::::<><>::
-mundo.tscn::PackedScene::3315900903095508933::1731220502::0::1::::<><>::res://Mundo/mundo.gd<>uid://ddl0ttx83v8jv::::res://Models/sword_runic_turbo_squid.blend<>uid://cqdvlb6cc1wmu::::res://Player/jugador.tscn<>uid://8tw2by1cl651::::res://tilesethd.tres<>uid://xtvrli0tmmco::::res://arbol_loko.tscn<>uid://y8csq2uwr4ld::::res://farol.tscn<>uid://btm3eeiifg00j::::res://pngs/cruz.png<>uid://lbju2u3n6kq2::::res://llaves.tscn<>uid://o8sj6toil84g::::res://pngs/tabla.png<>uid://p1gtinjjtpbh::::res://grassTerrain2.res<>uid://bci5tbyyr24nm::::res://Models/grass2.glb<>res://ground_alb_ht.dds<>res://ground_n_rgh.dds<>res://resources/gravel1.dds<>res://resources/gravel1n.dds<>res://grass_alb_ht.dds<>res://grass_n_rgh.dds<>res://resources/grass1.dds<>res://resources/grass1n.dds<>res://resources/grass2.dds<>res://resources/grass2n.dds<>res://resources/dirt1.dds<>res://resources/dirt1n.dds<>res://resources/dirt2.dds<>res://resources/dirt2n.dds<>res://resources/gravel2.dds<>res://resources/gravel2n.dds<>res://resources/moss1.dds<>res://resources/moss1n.dds<>res://resources/rock1.dds<>res://resources/rock1n.dds<>res://resources/rock2.dds<>res://resources/rock2n.dds<>res://resources/rock3.dds<>res://resources/rock3n.dds<>res://resources/rock4.dds<>res://resources/rock4n.dds<>res://resources/rock5.dds<>res://resources/rock5n.dds<>res://resources/rock6.dds<>res://resources/rock6n.dds<>res://resources/rock7.dds<>res://resources/rock7n.dds<>res://resources/rockSands2.dds<>res://resources/rockSands2n.dds<>res://resources/rockSands.dds<>res://resources/rockSandsn.dds<>res://resources/sand2.dds<>res://resources/sand2n.dds<>uid://duiqkyx7nt1cj::::res://arboles_castillo.tscn<>res://resources/sand3.dds<>res://resources/sand3n.dds<>uid://c8gunbarj3p7t::::res://arboles_2.tscn<>res://resources/stoneWay2.dds<>res://resources/stoneWay2n.dds<>uid://b8gpcordbbggs::::res://arbol_loko_2.tscn<>res://resources/sand1.dds<>res://resources/sand1n.dds<>res://addons/simplegrasstextured/shaders/grass.gdshader<>uid://c4ggdp0kg5wjk::::res://addons/simplegrasstextured/textures/grassbushcc008.png<>uid://bldxt5r8se2vr::::res://pngs/png-transparent-cut-flowers-plant-flower-leaf-branch-annual-plant.png<>res://addons/simplegrasstextured/grass.gd<>uid://188s8g3joj3k::::res://pngs/family-tree-rose-flowerpot-garden-roses-bonsai-plants-seed-ornamental-plant-png-clipart.png<>uid://dy5cuxecywibu::::res://pngs/258-2589072_flower-plant-liked-on-polyvore-featuring-home.png<>uid://cbp44k3a8jfs1::::res://velas_castillo.tscn<>uid://ca0wevg1lb4rx::::res://WaterMaker3D/WaterMaker3D.tscn<>uid://lsvs8a7urkca::::res://assets/models/RockC.tscn<>uid://cfs2b0egldke::::res://Mundo/mundo.occ<>uid://be6nrf0b8j4l0::::res://assets/models/RockA.tscn<>uid://bwvtgwartxt0g::::res://assets/models/RockB.tscn<>uid://bhfs1icipm0hb::::res://Materials/puerta.tscn<>uid://ciftcmkaj8o7h::::res://tuberia.tscn<>uid://jhctuqasgpnc::::res://ambiente_dia.tscn<>uid://dk7x1ndu5vw4e::::res://tuberia_2.tscn<>uid://cp05ockbx4rhv::::res://ventana.tscn<>uid://dy8ro1n7gvq8x::::res://Mundo/pause_menu.tscn<>uid://blue1jwcn8m18::::res://Mundo/mundo.VoxelGI_data.res<>uid://beykutr2roebq::::res://mesajejejejeje.tscn<>uid://ctfeof1dygtm3::::res://cumjar.tscn<>uid://cycaiflji6orl::::res://pozo_techumbre.tscn<>uid://c0rp83mq3ndxo::::res://cobertizo.tscn<>uid://c1hf23eaaih54::::res://azulejos.jpg
+mundo.tscn::PackedScene::3315900903095508933::1731224264::0::1::::<><>::res://Mundo/mundo.gd<>uid://ddl0ttx83v8jv::::res://Models/sword_runic_turbo_squid.blend<>uid://cqdvlb6cc1wmu::::res://Player/jugador.tscn<>uid://8tw2by1cl651::::res://tilesethd.tres<>uid://xtvrli0tmmco::::res://arbol_loko.tscn<>uid://y8csq2uwr4ld::::res://farol.tscn<>uid://btm3eeiifg00j::::res://pngs/cruz.png<>uid://lbju2u3n6kq2::::res://llaves.tscn<>uid://o8sj6toil84g::::res://pngs/tabla.png<>uid://p1gtinjjtpbh::::res://grassTerrain2.res<>uid://bci5tbyyr24nm::::res://Models/grass2.glb<>res://ground_alb_ht.dds<>res://ground_n_rgh.dds<>res://resources/gravel1.dds<>res://resources/gravel1n.dds<>res://grass_alb_ht.dds<>res://grass_n_rgh.dds<>res://resources/grass1.dds<>res://resources/grass1n.dds<>res://resources/grass2.dds<>res://resources/grass2n.dds<>res://resources/dirt1.dds<>res://resources/dirt1n.dds<>res://resources/dirt2.dds<>res://resources/dirt2n.dds<>res://resources/gravel2.dds<>res://resources/gravel2n.dds<>res://resources/moss1.dds<>res://resources/moss1n.dds<>res://resources/rock1.dds<>res://resources/rock1n.dds<>res://resources/rock2.dds<>res://resources/rock2n.dds<>res://resources/rock3.dds<>res://resources/rock3n.dds<>res://resources/rock4.dds<>res://resources/rock4n.dds<>res://resources/rock5.dds<>res://resources/rock5n.dds<>res://resources/rock6.dds<>res://resources/rock6n.dds<>res://resources/rock7.dds<>res://resources/rock7n.dds<>res://resources/rockSands2.dds<>res://resources/rockSands2n.dds<>res://resources/rockSands.dds<>res://resources/rockSandsn.dds<>res://resources/sand2.dds<>res://resources/sand2n.dds<>uid://duiqkyx7nt1cj::::res://arboles_castillo.tscn<>res://resources/sand3.dds<>res://resources/sand3n.dds<>uid://c8gunbarj3p7t::::res://arboles_2.tscn<>res://resources/stoneWay2.dds<>res://resources/stoneWay2n.dds<>uid://b8gpcordbbggs::::res://arbol_loko_2.tscn<>res://resources/sand1.dds<>res://resources/sand1n.dds<>res://addons/simplegrasstextured/shaders/grass.gdshader<>uid://c4ggdp0kg5wjk::::res://addons/simplegrasstextured/textures/grassbushcc008.png<>uid://bldxt5r8se2vr::::res://pngs/png-transparent-cut-flowers-plant-flower-leaf-branch-annual-plant.png<>res://addons/simplegrasstextured/grass.gd<>uid://188s8g3joj3k::::res://pngs/family-tree-rose-flowerpot-garden-roses-bonsai-plants-seed-ornamental-plant-png-clipart.png<>uid://dy5cuxecywibu::::res://pngs/258-2589072_flower-plant-liked-on-polyvore-featuring-home.png<>uid://cbp44k3a8jfs1::::res://velas_castillo.tscn<>uid://ca0wevg1lb4rx::::res://WaterMaker3D/WaterMaker3D.tscn<>uid://lsvs8a7urkca::::res://assets/models/RockC.tscn<>uid://cfs2b0egldke::::res://Mundo/mundo.occ<>uid://be6nrf0b8j4l0::::res://assets/models/RockA.tscn<>uid://bwvtgwartxt0g::::res://assets/models/RockB.tscn<>uid://bhfs1icipm0hb::::res://Materials/puerta.tscn<>uid://ciftcmkaj8o7h::::res://tuberia.tscn<>uid://jhctuqasgpnc::::res://ambiente_dia.tscn<>uid://dk7x1ndu5vw4e::::res://tuberia_2.tscn<>uid://cp05ockbx4rhv::::res://ventana.tscn<>uid://dy8ro1n7gvq8x::::res://Mundo/pause_menu.tscn<>uid://blue1jwcn8m18::::res://Mundo/mundo.VoxelGI_data.res<>uid://beykutr2roebq::::res://mesajejejejeje.tscn<>uid://ctfeof1dygtm3::::res://cumjar.tscn<>uid://cycaiflji6orl::::res://pozo_techumbre.tscn<>uid://c0rp83mq3ndxo::::res://cobertizo.tscn<>uid://c1hf23eaaih54::::res://azulejos.jpg
 mundo.VoxelGI_data.res::VoxelGIData::3200075324210649437::1731205730::0::1::::<><>::
 mundoNoche.VoxelGI_data.res::VoxelGIData::4245689593360525084::1731205730::0::1::::<><>::
 new_terrain_3d_material.tres::Terrain3DMaterial::7244785208040228358::1731205731::0::1::::<><>::
@@ -559,9 +560,9 @@ jugador.tscn::PackedScene::5903350799944827508::1731205743::0::1::::<><>::res://
 raycast.gd::GDScript::-1::1731205744::0::1::::<>RayCast3D<>::
 stamina.tscn::PackedScene::8382344786666256179::1731205745::0::1::::<><>::res://Player/staminaScript.gd<>uid://d32psv0jpk38u::::res://Player/HUD/barraenergiaUnder.png<>res://Mundo/global.gd<>uid://cgax6ustuxhii::::res://Player/HUD/barraenergiaUp.png
 staminaScript.gd::GDScript::-1::1731205745::0::1::::<>Control<>::
-::res://Player/HUD/::1731219901
+::res://Player/HUD/::1731222374
 barraenergiaUnder2.png::CompressedTexture2D::3225357553902161455::1731205742::1731205957::1::::<><>::
-barraenergiaUnder.png::CompressedTexture2D::9181231913525462790::1731205742::1731205957::1::::<><>::
+barraenergiaUnder.png::CompressedTexture2D::9181231913525462790::1731222370::1731222374::1::::<><>::
 barraenergiaUp2.png::CompressedTexture2D::1165695552203352235::1731205742::1731205956::1::::<><>::
 barraenergiaUp.png::CompressedTexture2D::5195427358823471372::1731205742::1731205956::1::::<><>::
 bright2.png::CompressedTexture2D::1055265517474566130::1731205742::1731205958::1::::<><>::
@@ -597,8 +598,6 @@ llavesPNG.png::CompressedTexture2D::5790663503942607106::1731205747::1731205950:
 menu.png::CompressedTexture2D::5880033222733506017::1731205747::1731205951::1::::<><>::
 png-transparent-cut-flowers-plant-flower-leaf-branch-annual-plant.png::CompressedTexture2D::3166123121377249895::1731205747::1731205950::1::::<><>::
 tabla.png::CompressedTexture2D::1051878913053762876::1731205747::1731205949::1::::<><>::
-::res://ProjectEvolvium/::1731220569
-README.md::TextFile::-1::1731220569::0::1::::<><>::
 ::res://resources/::1731219904
 dirt1.dds::ImageTexture::-1::1731205747::0::1::::<><>::
 dirt1n.dds::ImageTexture::-1::1731205747::0::1::::<><>::
@@ -643,9 +642,9 @@ stoneWay1.dds::ImageTexture::-1::1731205748::0::1::::<><>::
 stoneWay1n.dds::ImageTexture::-1::1731205748::0::1::::<><>::
 stoneWay2.dds::ImageTexture::-1::1731205748::0::1::::<><>::
 stoneWay2n.dds::ImageTexture::-1::1731205748::0::1::::<><>::
-::res://Sounds/::1731219905
+::res://Sounds/::1731223170
 bgMusic.gd::GDScript::-1::1731205749::0::1::::<>AudioStreamPlayer<>::
-bgMusic.tscn::PackedScene::2536074037524404636::1731216785::0::1::::<><>::uid://b2bh55txwbttu::::res://Sounds/Eerie-Abandoned-Haunted-Underground-Bunker-Ambience-_TW_-occasional-screams_-Horror-Ambience-__.ogg<>res://Sounds/bgMusic.gd
+bgMusic.tscn::PackedScene::2536074037524404636::1731223170::0::1::::<><>::uid://b2bh55txwbttu::::res://Sounds/Eerie-Abandoned-Haunted-Underground-Bunker-Ambience-_TW_-occasional-screams_-Horror-Ambience-__.ogg<>res://Sounds/bgMusic.gd
 Eerie-Abandoned-Haunted-Underground-Bunker-Ambience-_TW_-occasional-screams_-Horror-Ambience-__.ogg::AudioStreamOggVorbis::4284064038566811630::1731205749::1731205948::1::::<><>::
 footstepGrave1.mp3::AudioStreamMP3::6239239253480957464::1731205749::1731205945::1::::<><>::
 footstepGrave2.mp3::AudioStreamMP3::1419589775218419640::1731205749::1731205945::1::::<><>::

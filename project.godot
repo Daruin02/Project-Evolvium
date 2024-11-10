@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Proyecto Almanaque"
+config/name="Project Evolvium"
 config/description="Author: Artyom Bozhko"
 config/version="0.5 beta"
 run/main_scene="res://menu.tscn"
@@ -123,6 +123,7 @@ Interactuar={
 textures/canvas_textures/default_texture_filter=0
 anti_aliasing/screen_space_roughness_limiter/amount=2.6
 scaling_3d/scale=0.8
+scaling_3d/fsr_sharpness=0.2
 environment/volumetric_fog/volume_depth=32
 occlusion_culling/use_occlusion_culling=true
 anti_aliasing/transparent_background=false
