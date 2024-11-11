@@ -21,8 +21,6 @@ var original_gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var startMsg = $Label
 @onready var cabalho = $"../cabalho/NavigationAgent3D"
 @export var swim_up_speed := 10.0
-@onready var moto = $neck/randomShit/moto
-@onready var pico = $neck/randomShit/pico
 @onready var hud = $HUD
 @onready var rShit = $neck/randomShit
 @onready var linterna = $"neck/Primerpersona/Luces/linternaEncendida"
@@ -34,8 +32,6 @@ func _process(_delta): #NOCLIP
 	if Input.is_action_just_pressed("noclip"):
 		noclip = !noclip
 		if noclip==true:
-			moto.show()
-			pico.show()
 			set_collision_layer(0)  # Deshabilitar colisiones
 			set_collision_mask(0)
 			velocity = Vector3.ZERO  # Detener cualquier movimiento en curso
@@ -43,8 +39,6 @@ func _process(_delta): #NOCLIP
 			SPEED = SPEED*8
 		else:
 			if noclip==false:
-				moto.hide()
-				pico.hide()
 				set_collision_layer(1)  # Habilitar colisiones
 				set_collision_mask(1)
 				gravity = original_gravity  # Restaurar gravedad

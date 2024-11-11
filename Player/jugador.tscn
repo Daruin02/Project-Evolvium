@@ -1,14 +1,12 @@
-[gd_scene load_steps=29 format=3 uid="uid://cqdvlb6cc1wmu"]
+[gd_scene load_steps=27 format=3 uid="uid://cqdvlb6cc1wmu"]
 
 [ext_resource type="Script" path="res://Player/jugador.gd" id="1_tkee0"]
 [ext_resource type="AudioStream" uid="uid://uhwo3iewlivw" path="res://Sounds/footstepGrave2.mp3" id="2_8gjgm"]
-[ext_resource type="PackedScene" uid="uid://dqc2rkpfaaayq" path="res://Models/motorcycle.glb" id="2_ke1wf"]
-[ext_resource type="PackedScene" uid="uid://dsdjpk7cbpume" path="res://sombrero.tscn" id="2_uqwep"]
+[ext_resource type="PackedScene" uid="uid://dsdjpk7cbpume" path="res://Scenes/sombrero.tscn" id="2_uqwep"]
 [ext_resource type="AudioStream" uid="uid://cu5lmg62g53yi" path="res://Sounds/footstepGrave1.mp3" id="3_q1lk7"]
-[ext_resource type="PackedScene" uid="uid://ccj2p1nrqhmxo" path="res://Models/minecraft_diamond-pickaxe.glb" id="4_22q2l"]
-[ext_resource type="PackedScene" uid="uid://40s2ktnoti8w" path="res://linterna.tscn" id="4_c1joy"]
+[ext_resource type="PackedScene" uid="uid://40s2ktnoti8w" path="res://Scenes/linterna.tscn" id="4_c1joy"]
 [ext_resource type="Script" path="res://Player/raycast.gd" id="5_40vbv"]
-[ext_resource type="PackedScene" uid="uid://dw7pe2pkp0ugv" path="res://linterna_2.tscn" id="5_a1jaq"]
+[ext_resource type="PackedScene" uid="uid://dw7pe2pkp0ugv" path="res://Scenes/linterna_2.tscn" id="5_a1jaq"]
 [ext_resource type="PackedScene" uid="uid://dv1rnjlnwoevf" path="res://Player/HUD/hud.tscn" id="10_1qtp3"]
 [ext_resource type="Texture2D" uid="uid://corbm8pssuj6a" path="res://pngs/llavesPNG.png" id="11_5eqq3"]
 [ext_resource type="Texture2D" uid="uid://cop4bv7562npv" path="res://pngs/inventarioCuadricula.png" id="11_si3gf"]
@@ -193,17 +191,6 @@ shape = SubResource("BoxShape3D_mg5sh")
 
 [node name="neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-
-[node name="randomShit" type="Node3D" parent="neck"]
-visible = false
-
-[node name="moto" parent="neck/randomShit" instance=ExtResource("2_ke1wf")]
-transform = Transform3D(2.02655, 0, 0, 0, 1, 0, 0, 0, 1.42962, 0, -0.875975, -0.524533)
-visible = false
-
-[node name="pico" parent="neck/randomShit" instance=ExtResource("4_22q2l")]
-transform = Transform3D(-1.23289e-09, -0.0207434, 0.0131306, 0.03, -9.64419e-10, 6.57148e-17, 4.46763e-10, 0.00751679, 0.0362353, 0.491916, -0.281707, -1.10479)
-visible = false
 
 [node name="Primerpersona" type="Camera3D" parent="neck"]
 transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)

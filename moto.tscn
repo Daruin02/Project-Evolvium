@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyr3eqth76ej7"]
-
-[ext_resource type="PackedScene" uid="uid://dqc2rkpfaaayq" path="res://Models/motorcycle.glb" id="1_ws1f1"]
-
-[node name="Sketchfab_Scene" instance=ExtResource("1_ws1f1")]

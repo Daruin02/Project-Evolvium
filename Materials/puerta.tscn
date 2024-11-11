@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://2iwajaiml0yj" path="res://Perilla.tres" id="1_t7si7"]
 [ext_resource type="Material" uid="uid://dcurr2g4oa604" path="res://Materials/door.tres" id="3_bt5rw"]
-[ext_resource type="Script" path="res://puerta.gd" id="3_oo57t"]
+[ext_resource type="Script" path="res://Scripts/puerta.gd" id="3_oo57t"]
 [ext_resource type="AudioStream" uid="uid://cfoebrd7aasq1" path="res://Sounds/zapsplat_household_door_wooden_internal_open_003_99278-_AudioTrimmer.com_.ogg" id="3_vi7h8"]
 [ext_resource type="AudioStream" uid="uid://dsdext5fvmfc7" path="res://Sounds/lockedDoor.ogg" id="5_1e660"]
 [ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="6_avqkl"]

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cosgr0orpb1sy" path="res://pngs/dead_tree_png_by_gd08_d3hs9tf-fullview.png" id="5_4tvju"]
 [ext_resource type="Texture2D" uid="uid://bj0a8ealvnooy" path="res://pngs/dead-tree-on-transparent-background-png.png" id="6_s4sl6"]
 [ext_resource type="Texture2D" uid="uid://b00wawc7lf0el" path="res://pngs/arbolito4.png" id="7_x7bdi"]
-[ext_resource type="Texture2D" uid="uid://cnsh5pbrq211v" path="res://cabalho/caballo.png" id="8_ndhih"]
+[ext_resource type="Texture2D" uid="uid://cnsh5pbrq211v" path="res://pngs/caballo.png" id="8_ndhih"]
 
 [node name="bushes" type="Node"]
 

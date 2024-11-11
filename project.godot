@@ -13,16 +13,16 @@ config_version=5
 config/name="Project Evolvium"
 config/description="Author: Artyom Bozhko"
 config/version="0.5 beta"
-run/main_scene="res://menu.tscn"
+run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 run/max_fps=60
-config/icon="res://addons/tree3d/ico/Tree3D.png"
+config/icon="res://pngs/greñas.png"
 
 [autoload]
 
-global="*res://Mundo/global.gd"
+global="*res://Scripts/global.gd"
 BgMusic="*res://Sounds/bgMusic.tscn"
-mundo="*res://Mundo/mundo.gd"
+mundo="*res://Scripts/mundo.gd"
 bgMusic="*res://Sounds/bgMusic.gd"
 Inventario="*res://inventario.gd"
 SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp05ockbx4rhv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abmvn"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+albedo_color = Color(0.827451, 1, 1, 0.211765)
+refraction_scale = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_a3wby"]
+
+[node name="Ventana" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.0186783, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_abmvn")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_a3wby")
+skeleton = NodePath("")

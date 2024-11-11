@@ -1,0 +1,146 @@
+[gd_scene load_steps=7 format=3 uid="uid://csm0tqv66qwro"]
+
+[ext_resource type="PackedScene" uid="uid://ymuymk32m26" path="res://Models/Character.glb" id="1_3um1b"]
+[ext_resource type="PackedScene" uid="uid://dsdjpk7cbpume" path="res://Scenes/sombrero.tscn" id="2_roxvn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkcok"]
+albedo_color = Color(1, 1, 0.85098, 1)
+metallic = 0.64
+roughness = 0.0
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.5
+
+[sub_resource type="Animation" id="Animation_v8ybw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Esfera geodésica:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -1.5708, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Esfera geodésica:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 2.4, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TwistedTorus:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.94674, 0.22863)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TwistedTorus:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.46428, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_m12wi"]
+resource_name = "sphereRotation"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Esfera geodésica:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1.5708, 0), Vector3(0, 4.71239, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Esfera geodésica:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.25, 2.5, 3.75, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 2.2, 0), Vector3(0, 2.4, 0), Vector3(0, 2.2, 0), Vector3(0, 2.4, 0), Vector3(0, 2.2, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TwistedTorus:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.26667, 2.5, 3.73333, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.94674, 0.22863), Vector3(0, 2.147, 0.229), Vector3(0, 1.947, 0.229), Vector3(0, 2.147, 0.229), Vector3(0, 1.94674, 0.22863)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TwistedTorus:rotation")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.2667, 3.7333, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.46428, 0, 0), Vector3(1.46433, 0.349066, 0), Vector3(1.46433, -0.349066, 0), Vector3(1.46428, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_18bkr"]
+_data = {
+"RESET": SubResource("Animation_v8ybw"),
+"sphereRotation": SubResource("Animation_m12wi")
+}
+
+[node name="Character" instance=ExtResource("1_3um1b")]
+
+[node name="TwistedTorus" parent="." index="0"]
+transform = Transform3D(0.297275, 0, 0, 0, 0.00606995, -1.00383, 0, 0.0567704, 0.10733, 0, 1.94674, 0.22863)
+visible = false
+
+[node name="Esfera geodésica" parent="." index="1"]
+transform = Transform3D(-9.04998e-07, 0, -0.25, 0, 0.25, 0, 0.25, 0, -9.04998e-07, 0, 2.4, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_nkcok")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Esfera geodésica" index="0"]
+omni_range = 0.61022
+omni_attenuation = 1.2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_18bkr")
+}
+autoplay = "sphereRotation"
+
+[node name="sombrero" parent="." index="3" instance=ExtResource("2_roxvn")]
+layers = 32
