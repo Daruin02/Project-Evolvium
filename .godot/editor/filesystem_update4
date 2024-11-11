@@ -1,3 +1,15 @@
+res://Scenes/edificioCol.tscn
+res://Perilla.tres
+res://tilesethd.tres
+res://Mundo/mundo.VoxelGI_data.res
+res://Scenes/ambiente_dia.tscn
+res://Scenes/fridge.tscn
+res://godot_curvature_shader-cb4c390e927abf56f367ec357fc3d8af836557bf/curvature_shader.gdshader
 res://grassTerrain2.res
 res://Mundo/mundo.tscn
-res://tilesethd.tres
+res://Scenes/menu.tscn
+res://Scenes/ventana.tscn
+res://Scenes/llaves.tscn
+res://Player/jugador.tscn
+res://Mundo/mundoNoche.tscn
+res://Scenes/cobertizo.tscn

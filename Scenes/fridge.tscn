@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bkd2f5n22t61x"]
+[gd_scene load_steps=41 format=4 uid="uid://bkd2f5n22t61x"]
 
 [ext_resource type="Script" path="res://Scenes/freeze.gd" id="1_ietuv"]
 [ext_resource type="Script" path="res://Scenes/fridge.gd" id="2_5kus1"]
@@ -299,8 +299,40 @@ shadow_mesh = SubResource("ArrayMesh_fl5ij")
 [sub_resource type="BoxShape3D" id="BoxShape3D_h0jgx"]
 size = Vector3(1.71729, 2.29407, 0.23233)
 
+[sub_resource type="Shader" id="Shader_jyke5"]
+code = "shader_type spatial;
+
+uniform texture2D albedo_texture : hint_albedo; // Textura de albedo
+uniform float banding_smoothness : hint_range(0.0, 1.0) = 0.1; // Controla el suavizado
+
+void fragment() {
+    // Obtener el color del píxel actual de la textura
+    vec4 color = texture(albedo_texture, UV); 
+
+    // Desenfoque simple para suavizar el banding
+    vec3 avg_color = vec3(0.0);
+    for (int x = -1; x <= 1; x++) {
+        for (int y = -1; y <= 1; y++) {
+            avg_color += texture(albedo_texture, UV + vec2(x, y) * banding_smoothness).rgb;
+        }
+    }
+    avg_color /= 9.0;
+
+    // Aplicar el suavizado a la superficie
+    color.rgb = mix(color.rgb, avg_color, banding_smoothness);
+
+    ALBEDO = color.rgb; // Establecer el color final
+    ALPHA = color.a; // Mantener la transparencia original
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fexy0"]
+render_priority = 0
+shader = SubResource("Shader_jyke5")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m2eb6"]
 resource_name = "Material"
+next_pass = SubResource("ShaderMaterial_fexy0")
 cull_mode = 2
 albedo_color = Color(0.109804, 0.109804, 0.141176, 1)
 metallic = 0.4

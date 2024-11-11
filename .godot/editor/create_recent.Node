@@ -1,6 +1,8 @@
+OmniLight3D
+AnimationPlayer
+AnimationTree
 Node3D
 MeshInstance3D
 CollisionShape3D
 Sprite3D
-AnimationPlayer
 StaticBody3D
