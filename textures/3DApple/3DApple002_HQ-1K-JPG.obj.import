@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlfg7qjvlo2fs"
+path="res://.godot/imported/3DApple002_HQ-1K-JPG.obj-2aa223df961062e42b8274f14779969c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/3DApple002_HQ-1K-JPG.obj-2aa223df961062e42b8274f14779969c.mesh"]
+
+source_file="res://textures/3DApple/3DApple002_HQ-1K-JPG.obj"
+dest_files=["res://.godot/imported/3DApple002_HQ-1K-JPG.obj-2aa223df961062e42b8274f14779969c.mesh", "res://.godot/imported/3DApple002_HQ-1K-JPG.obj-2aa223df961062e42b8274f14779969c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

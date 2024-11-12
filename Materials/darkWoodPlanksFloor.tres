@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://bj6o2bqdtyjs"]
+
+[ext_resource type="Texture2D" uid="uid://mt1sgym3tfrx" path="res://textures/Planks1/Planks037A_1K-JPG_Color.jpg" id="1_ketln"]
+[ext_resource type="Texture2D" uid="uid://8j7gyqgyubms" path="res://textures/Planks1/Planks037A_1K-JPG_AmbientOcclusion.jpg" id="2_2j3tv"]
+[ext_resource type="Texture2D" uid="uid://b61yfrtce4hpm" path="res://textures/Planks1/Planks037A_1K-JPG_Metalness.jpg" id="3_3ec5b"]
+[ext_resource type="Texture2D" uid="uid://gmm52pm4sqxj" path="res://textures/Planks1/Planks037A_1K-JPG_NormalGL.jpg" id="4_kt4ds"]
+[ext_resource type="Texture2D" uid="uid://5u0qwqmarmmr" path="res://textures/Planks1/Planks037A_1K-JPG_Roughness.jpg" id="5_ax0u0"]
+
+[resource]
+albedo_texture = ExtResource("1_ketln")
+metallic = 1.0
+metallic_texture = ExtResource("3_3ec5b")
+roughness_texture = ExtResource("5_ax0u0")
+normal_enabled = true
+normal_texture = ExtResource("4_kt4ds")
+ao_enabled = true
+ao_texture = ExtResource("2_2j3tv")
+uv1_scale = Vector3(0.605, 0.605, 0.605)
+uv1_triplanar = true

@@ -15,7 +15,6 @@ config/description="Author: Artyom Bozhko"
 config/version="0.5 beta"
 run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-run/max_fps=60
 config/icon="res://pngs/greñas.png"
 
 [autoload]

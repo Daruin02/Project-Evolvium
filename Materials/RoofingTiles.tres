@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dv0gyk37coaja"]
+
+[ext_resource type="Texture2D" uid="uid://bvsjim6pkp3ef" path="res://textures/RoofingTiles1/RoofingTiles013A_1K-JPG_Color.jpg" id="1_hpq0r"]
+[ext_resource type="Texture2D" uid="uid://dlblv25cai77v" path="res://textures/RoofingTiles1/RoofingTiles013A_1K-JPG_AmbientOcclusion.jpg" id="2_bhnvc"]
+[ext_resource type="Texture2D" uid="uid://8r6qiicn7fe" path="res://textures/RoofingTiles1/RoofingTiles013A_1K-JPG_NormalGL.jpg" id="3_y24jw"]
+[ext_resource type="Texture2D" uid="uid://dmyb75uynqkmr" path="res://textures/RoofingTiles1/RoofingTiles013A_1K-JPG_Roughness.jpg" id="4_vngnn"]
+
+[resource]
+albedo_texture = ExtResource("1_hpq0r")
+roughness_texture = ExtResource("4_vngnn")
+normal_enabled = true
+normal_texture = ExtResource("3_y24jw")
+ao_enabled = true
+ao_texture = ExtResource("2_bhnvc")
+uv1_scale = Vector3(0.495, 0.495, 0.495)
+uv1_triplanar = true
