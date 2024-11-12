@@ -22,7 +22,7 @@ texture = ExtResource("6_yqdmx")
 
 [node name="Cursor" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-scale = Vector2(1.5, 1.5)
+scale = Vector2(2, 2)
 texture = ExtResource("1_kjgqs")
 
 [node name="StaminaLabel" type="Label" parent="."]
