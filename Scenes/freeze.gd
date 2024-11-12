@@ -3,10 +3,6 @@ extends StaticBody3D
 var interacting = false
 var is_open = false
 
-func _ready():
-	# Conecta la señal animation_finished directamente al método _on_animation_finished sin usar self
-	$"../../Freezer".connect("animation_finished", _on_animation_finished)
-
 func interact():
 	if interacting:
 		return

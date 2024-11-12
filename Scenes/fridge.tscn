@@ -545,3 +545,4 @@ shaded = true
 texture = ExtResource("3_w85ok")
 
 [connection signal="animation_finished" from="Freezer" to="bisagrafreezer/Freeze" method="_on_animation_finished"]
+[connection signal="animation_finished" from="Fridge" to="bisagrafridge/Fridge" method="_on_animation_finished"]

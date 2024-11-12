@@ -29,7 +29,7 @@ func interact():
 			await doorAnimation.animation_finished  # Espera a que termine la animación
 			is_locked_animating = false  # Permite la interacción nuevamente
 
-func _on_animation_finished(anim_name):
+func _on_animation_finished(_animation_name: String):
 	is_animating = false  # La animación ha terminado, se puede volver a interactuar
 
 func _on_timer_timeout():

@@ -4,8 +4,7 @@ extends Control
 
 func _ready():
 	# Conectar señales de los botones
-	var volume_button = $MarginContainer/VBoxContainer/Volume  # Obtener referencia al botón de volumen
-	var back_button = $MarginContainer/VBoxContainer/Atras  # Obtener referencia al botón de atrás
+	var _volume_button = $MarginContainer/VBoxContainer/Volume  # Obtener referencia al botón de volumen
 	
 	update_volume_button()  # Actualizar el texto del botón de volumen
 

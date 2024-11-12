@@ -7,7 +7,7 @@ var sceneLoadStatus = 0
 func _ready():
 	sceneName = "res://Mundo/mundo.tscn"
 	ResourceLoader.load_threaded_request(sceneName)
-func _process(delta):
+func _process(_delta):
 	sceneLoadStatus=ResourceLoader.load_threaded_get_status(sceneName,progress)
 	$countDown.text = str(floor(progress[0]*100))+"%"
 	if sceneLoadStatus == ResourceLoader.THREAD_LOAD_LOADED:

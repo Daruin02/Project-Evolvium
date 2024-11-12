@@ -3,7 +3,7 @@ extends RayCast3D
 @onready var interactlabel = $Label
 #@onready var llavesINV = $LlavesPng
 
-func _process(delta):
+func _process(_delta):
 	if is_colliding():
 		var hit_obj = get_collider()
 		if hit_obj and hit_obj.has_method("interact"):

@@ -1,12 +1,13 @@
 [gd_scene load_steps=30 format=4 uid="uid://c0rp83mq3ndxo"]
 
 [ext_resource type="Texture2D" uid="uid://b8r8duehb1fdy" path="res://sueloroca.jpeg" id="1_v5e04"]
-[ext_resource type="Texture2D" uid="uid://clrg7rbb2qto3" path="res://image/bark.jpg" id="2_bgv3q"]
+[ext_resource type="Texture2D" uid="uid://clrg7rbb2qto3" path="res://bark.jpg" id="2_bgv3q"]
 [ext_resource type="Texture2D" uid="uid://6e3co73cjxp8" path="res://aldric-rivat-jAy_cHc8wDQ-unsplash.jpg" id="3_6enqb"]
 [ext_resource type="Texture2D" uid="uid://ccoeinerfp7d0" path="res://istockphoto-517275434-612x612.jpg" id="4_t0jqm"]
 [ext_resource type="PackedScene" uid="uid://cp05ockbx4rhv" path="res://Scenes/ventana.tscn" id="5_j2qxs"]
 [ext_resource type="Texture2D" uid="uid://g58juwelp57x" path="res://wooden-wood-backgrounds-textured-pattern-wallpaper-concept.jpg" id="5_wm7mv"]
 [ext_resource type="PackedScene" uid="uid://sp7p301l5k4s" path="res://Scenes/velita_unica_sombra.tscn" id="7_ji4l3"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_paqar"]
 albedo_texture = ExtResource("1_v5e04")

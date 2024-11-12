@@ -19,10 +19,8 @@ var original_gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var luzProfunda = $neck/Primerpersona/Luces/lamparaMasLejos
 @onready var transition = $HUD/Transition
 @onready var startMsg = $Label
-@onready var cabalho = $"../cabalho/NavigationAgent3D"
 @export var swim_up_speed := 10.0
 @onready var hud = $HUD
-@onready var rShit = $neck/randomShit
 @onready var linterna = $"neck/Primerpersona/Luces/linternaEncendida"
 @onready var linternaOFF = $"neck/Primerpersona/Luces/linternaApagada"
 
