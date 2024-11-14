@@ -55,7 +55,7 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.233333),
 "transitions": PackedFloat32Array(1, 1),
@@ -65,7 +65,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_bwdtf"]
 resource_name = "headbob"
-length = 0.6
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -74,10 +73,10 @@ tracks/0/path = NodePath("neck:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0), Vector3(0, 0.58, 0)]
+"values": [Vector3(0, 0.5, 0), Vector3(0, 0.58, 0), Vector3(0, 0.66, 0)]
 }
 tracks/1/type = "method"
 tracks/1/imported = false
@@ -102,7 +101,7 @@ tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("neck:position")
-tracks/0/interp = 1
+tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
@@ -194,20 +193,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Primerpersona" type="Camera3D" parent="neck"]
 transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
-cull_mask = 1047583
+cull_mask = 1048573
 
 [node name="sombrero" parent="neck/Primerpersona" instance=ExtResource("2_uqwep")]
 transform = Transform3D(-0.559987, -0.00106194, 0.000418952, 0.00556964, -0.239986, -0.00717742, 0.000450686, -0.0013663, 0.559979, 0.0983933, 0.463595, 0.145263)
 
 [node name="Luces" type="Node3D" parent="neck/Primerpersona"]
 transform = Transform3D(1, 0, 0, 0, 0.990346, 0.13862, 0, -0.13862, 0.990346, -0.00347628, -0.031383, 0.0262647)
-
-[node name="linternaApagada" parent="neck/Primerpersona/Luces" instance=ExtResource("5_a1jaq")]
-transform = Transform3D(-0.0973182, -0.022467, 0.00493998, -0.00941338, 0.0193003, -0.0976672, 0.0209894, -0.095513, -0.0208976, 0.323, -0.103, -0.267)
-visible = false
-
-[node name="linternaEncendida" parent="neck/Primerpersona/Luces" instance=ExtResource("4_c1joy")]
-transform = Transform3D(-0.0973001, -0.0225443, 0.00494416, -0.00944506, 0.0193479, -0.0976547, 0.021059, -0.0954852, -0.0209548, 0.322769, -0.103001, -0.267275)
 
 [node name="lamparaMasLejos" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
 transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.30241, -0.0284415, -0.637788)
@@ -238,6 +230,15 @@ light_volumetric_fog_energy = 20.0
 shadow_enabled = true
 spot_range = 10.0
 spot_angle = 35.4343
+
+[node name="Hand" type="Node3D" parent="neck/Primerpersona/Luces"]
+
+[node name="linternaApagada" parent="neck/Primerpersona/Luces/Hand" instance=ExtResource("5_a1jaq")]
+transform = Transform3D(-0.0973182, -0.022467, 0.00493998, -0.00941338, 0.0193003, -0.0976672, 0.0209894, -0.095513, -0.0208976, 0.323, -0.103, -0.267)
+visible = false
+
+[node name="linternaEncendida" parent="neck/Primerpersona/Luces/Hand" instance=ExtResource("4_c1joy")]
+transform = Transform3D(-0.0973001, -0.0225443, 0.00494416, -0.00944506, 0.0193479, -0.0976547, 0.021059, -0.0954852, -0.0209548, 0.322769, -0.103001, -0.267275)
 
 [node name="RayCast3D" type="RayCast3D" parent="neck/Primerpersona"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.341452)
@@ -276,11 +277,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 [node name="footsteps" type="AudioStreamPlayer3D" parent="neck/audio"]
 transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
 stream = ExtResource("2_8gjgm")
-volume_db = -42.0
+volume_db = -28.0
+autoplay = true
 
 [node name="jumpstep" type="AudioStreamPlayer3D" parent="neck/audio"]
 stream = ExtResource("3_q1lk7")
-volume_db = -42.0
+volume_db = -25.0
 
 [node name="Label" type="Label" parent="."]
 offset_left = 881.0

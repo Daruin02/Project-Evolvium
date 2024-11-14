@@ -28,11 +28,14 @@ SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=960
+window/size/viewport_height=540
 window/size/mode=4
+window/size/resizable=false
 window/size/borderless=true
+window/stretch/mode="viewport"
 window/stretch/aspect="ignore"
+window/stretch/scale=0.5
 
 [editor_plugins]
 
@@ -120,12 +123,16 @@ Interactuar={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+lights_and_shadows/directional_shadow/size=16384
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
+textures/default_filters/use_nearest_mipmap_filter=true
 anti_aliasing/screen_space_roughness_limiter/amount=2.6
-scaling_3d/scale=0.8
 scaling_3d/fsr_sharpness=0.2
 environment/volumetric_fog/volume_depth=32
 anti_aliasing/quality/use_debanding=true
 occlusion_culling/use_occlusion_culling=true
+lights_and_shadows/positional_shadow/atlas_size=1024
 anti_aliasing/transparent_background=false
 anti_aliasing/stretch/mode="viewport"
 

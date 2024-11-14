@@ -1,29 +1,30 @@
 [gd_scene load_steps=4 format=3 uid="uid://jhctuqasgpnc"]
 
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_lar4e"]
-rayleigh_color = Color(0.956863, 0.670588, 0.411765, 1)
-mie_coefficient = 0.1
-mie_eccentricity = 0.95
-mie_color = Color(0.929412, 0.67451, 0.196078, 1)
-turbidity = 20.0
-sun_disk_scale = 2.0
-ground_color = Color(0.39768, 0.38145, 0.573254, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nxekg"]
+sky_top_color = Color(0.1092, 0.16068, 0.39, 1)
+sky_horizon_color = Color(0.54, 0.333, 0, 1)
+sky_curve = 0.0989631
+sky_energy_multiplier = 0.7
+ground_bottom_color = Color(0.253336, 0.147266, 0.0203041, 1)
+ground_horizon_color = Color(0.213599, 0.12737, 0.0869489, 1)
+ground_curve = 0.0828217
+sun_curve = 11.0275
 
 [sub_resource type="Sky" id="Sky_7713u"]
-sky_material = SubResource("PhysicalSkyMaterial_lar4e")
+sky_material = SubResource("ProceduralSkyMaterial_nxekg")
 process_mode = 1
 radiance_size = 4
 
 [sub_resource type="Environment" id="Environment_185f5"]
 background_mode = 2
+background_energy_multiplier = 0.3
+background_intensity = 0.0
 sky = SubResource("Sky_7713u")
-sky_custom_fov = 100.0
-glow_enabled = true
+ssr_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.105882, 0.101961, 0.117647, 1)
 fog_light_energy = 0.1
 fog_sun_scatter = 0.01
-fog_density = 0.02
 fog_aerial_perspective = 1.0
 fog_height = 1.0
 fog_height_density = 0.2
@@ -35,17 +36,3 @@ volumetric_fog_length = 2.0
 
 [node name="AmbienteDia" type="WorldEnvironment"]
 environment = SubResource("Environment_185f5")
-
-[node name="SunLight" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.345925, -0.0513496, -0.936856, 0.895695, -0.279269, 0.346033, -0.279403, -0.958839, -0.0506123, 308.725, 246.574, 0)
-light_color = Color(0.835294, 0.698039, 0.45098, 1)
-light_energy = 0.6
-light_indirect_energy = 0.0
-light_volumetric_fog_energy = 0.0
-light_bake_mode = 1
-shadow_enabled = true
-shadow_bias = 0.0
-shadow_normal_bias = 0.0
-shadow_blur = 0.4
-directional_shadow_mode = 0
-directional_shadow_split_1 = 1.0

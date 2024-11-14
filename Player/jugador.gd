@@ -13,7 +13,7 @@ var original_gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var footSteps = $neck/audio/footsteps
 @onready var jumpStep = $neck/audio/jumpstep
 @onready var neck := get_node("neck")
-@onready var camera := get_node("neck/Primerpersona")
+@onready var camera := $neck/Primerpersona
 @onready var luzCerca = $neck/Primerpersona/Luces/lamparaCerca
 @onready var luzLejana =$neck/Primerpersona/Luces/lamparaLejos
 @onready var luzProfunda = $neck/Primerpersona/Luces/lamparaMasLejos
@@ -21,9 +21,9 @@ var original_gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var startMsg = $Label
 @export var swim_up_speed := 10.0
 @onready var hud = $HUD
-@onready var linterna = $"neck/Primerpersona/Luces/linternaEncendida"
-@onready var linternaOFF = $"neck/Primerpersona/Luces/linternaApagada"
-
+@onready var mano = $neck/Primerpersona/Luces/Hand
+@onready var linterna = $neck/Primerpersona/Luces/Hand/linternaEncendida
+@onready var linternaOFF = $neck/Primerpersona/Luces/Hand/linternaApagada
 
 func _process(_delta): #NOCLIP
 	# Alternar modo noclip al presionar "V"
@@ -49,7 +49,6 @@ func _process(_delta): #NOCLIP
 			velocity.y = -SPEED*1.8  # Ajusta SPEED para bajar
 		else:
 				velocity.y = 0  # Detener movimiento vertical cuando no se presionan E o Q
-
 func _input(event): #F1 & LANTERN HIDE / SHOW
 	if event.is_action_pressed("F1"):
 		novision = !novision
@@ -96,7 +95,7 @@ func _unhandled_input(event: InputEvent) -> void: #MOUSE CAMERA
 			camera.rotate_x(-event.relative.y * 0.003)
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 func _play_footsteps_audio(): #FOOT STEP AUDIO
-	footSteps.pitch_scale = randf_range(.6, 1)
+	footSteps.pitch_scale = randf_range(.8, 1.2)
 	footSteps.play()
 func _physics_process(delta: float) -> void: #CAN_JUMP CAN_RUN IS ON FLOOR ?
 	if not is_on_floor():
@@ -137,7 +136,7 @@ func _physics_process(delta: float) -> void: #CAN_JUMP CAN_RUN IS ON FLOOR ?
 	if global.can_jump == true and is_on_floor() && Input.is_action_just_pressed("ui_accept"):
 		global.isJumping = true 
 		velocity.y = JUMP_VELOCITY
-		jumpStep.pitch_scale = randf_range(.6, 1)
+		jumpStep.pitch_scale = randf_range(.8, 1.2)
 		jumpStep.play()
 	if global.isCrouching == true:
 		velocity.x *= 0.7
