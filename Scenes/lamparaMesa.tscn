@@ -1,9 +1,9 @@
 [gd_scene load_steps=29 format=4 uid="uid://b4a0apylvhkw0"]
 
 [ext_resource type="Material" uid="uid://kegd8siw3yww" path="res://Materials/goodWOod.tres" id="1_vcl3h"]
-[ext_resource type="Texture2D" uid="uid://cn5pqk0g44brd" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_Color.jpg" id="2_aofdt"]
-[ext_resource type="Texture2D" uid="uid://u8ae740ig0w7" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_NormalGL.jpg" id="3_mq3ru"]
-[ext_resource type="Texture2D" uid="uid://1s35ogipx1om" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_Roughness.jpg" id="4_7yd0j"]
+[ext_resource type="Texture2D" uid="uid://cgfgd38wq4x76" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_Color.jpg" id="2_aofdt"]
+[ext_resource type="Texture2D" uid="uid://d4iyiabmkwu2" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_NormalGL.jpg" id="3_mq3ru"]
+[ext_resource type="Texture2D" uid="uid://bqyxt82gr8eia" path="res://textures/Paper001_1K-JPG/Paper001_1K-JPG_Roughness.jpg" id="4_7yd0j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6yyur"]
 

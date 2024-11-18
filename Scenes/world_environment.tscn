@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://wcvmhurrdydc"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_o0jes"]
+
+[sub_resource type="Sky" id="Sky_cxcq7"]
+sky_material = SubResource("PhysicalSkyMaterial_o0jes")
+
+[sub_resource type="Environment" id="Environment_0kl8t"]
+background_mode = 1
+background_color = Color(0.0383516, 0.0896133, 0.135424, 1)
+sky = SubResource("Sky_cxcq7")
+ambient_light_source = 1
+fog_enabled = true
+fog_light_color = Color(0.0392157, 0.0901961, 0.137255, 1)
+fog_light_energy = 0.2
+fog_height = 10.0
+fog_height_density = 0.2
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0184
+volumetric_fog_albedo = Color(0.13512, 0.236128, 0.329509, 1)
+volumetric_fog_emission = Color(0.165711, 0.198551, 0.288941, 1)
+volumetric_fog_emission_energy = 0.2
+volumetric_fog_length = 0.01
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_0kl8t")
