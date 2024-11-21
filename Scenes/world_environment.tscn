@@ -11,10 +11,11 @@ background_color = Color(0.0383516, 0.0896133, 0.135424, 1)
 sky = SubResource("Sky_cxcq7")
 ambient_light_source = 1
 fog_enabled = true
+fog_mode = 1
 fog_light_color = Color(0.0392157, 0.0901961, 0.137255, 1)
-fog_light_energy = 0.2
-fog_height = 10.0
-fog_height_density = 0.2
+fog_density = 0.8
+fog_height = 30.0
+fog_height_density = 0.05
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0184
 volumetric_fog_albedo = Color(0.13512, 0.236128, 0.329509, 1)
@@ -24,3 +25,10 @@ volumetric_fog_length = 0.01
 
 [node name="WorldEnvironment" type="WorldEnvironment"]
 environment = SubResource("Environment_0kl8t")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.165289, 0.986245, 0, -0.986245, -0.165289, 0, 0, 0)
+light_color = Color(0.5561, 0.668102, 0.67, 1)
+light_energy = 0.3
+shadow_enabled = true
+shadow_reverse_cull_face = true

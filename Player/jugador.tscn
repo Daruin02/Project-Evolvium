@@ -12,8 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://cop4bv7562npv" path="res://pngs/inventarioCuadricula.png" id="11_si3gf"]
 [ext_resource type="FontFile" uid="uid://x7trma8urf7e" path="res://Fonts/Mom«t___.ttf" id="12_7ic3v"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_mg5sh"]
-size = Vector3(1, 1.08706, 1)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pm6ua"]
+radius = 0.33
+height = 1.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_uhlcm"]
 font = ExtResource("12_7ic3v")
@@ -185,8 +186,8 @@ transform = Transform3D(0.8, 0, 0, 0, 1.2, 0, 0, 0, 0.8, 0, 0.5, 0)
 script = ExtResource("1_tkee0")
 
 [node name="ColisionDePie" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.75, 0, 0, 0, 1.5, 0, 0, 0, 0.75, 0, 0, 0)
-shape = SubResource("BoxShape3D_mg5sh")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33, 0)
+shape = SubResource("CapsuleShape3D_pm6ua")
 
 [node name="neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -196,20 +197,20 @@ transform = Transform3D(1.25, 0, 0, 0, 0.833333, 0, 0, 0, 1.25, 0, 0, 0)
 cull_mask = 1048573
 
 [node name="sombrero" parent="neck/Primerpersona" instance=ExtResource("2_uqwep")]
-transform = Transform3D(-0.559987, -0.00106194, 0.000418952, 0.00556964, -0.239986, -0.00717742, 0.000450686, -0.0013663, 0.559979, 0.0983933, 0.463595, 0.145263)
+transform = Transform3D(-0.559987, -0.00106194, 0.000418952, 0.00556964, -0.239986, -0.00717742, 0.000450686, -0.0013663, 0.559979, 0.098, 0.5, 0.145)
 
 [node name="Luces" type="Node3D" parent="neck/Primerpersona"]
 transform = Transform3D(1, 0, 0, 0, 0.990346, 0.13862, 0, -0.13862, 0.990346, -0.00347628, -0.031383, 0.0262647)
 
 [node name="lamparaMasLejos" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
 transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.30241, -0.0284415, -0.637788)
-light_color = Color(0.975706, 0.811676, 0.465673, 1)
+light_color = Color(0.858824, 0.87451, 0.756863, 1)
 light_energy = 25.0
 light_indirect_energy = 5.0
 light_volumetric_fog_energy = 20.0
 shadow_enabled = true
-spot_range = 25.0
-spot_angle = 8.73653
+spot_range = 21.0
+spot_angle = 15.0
 
 [node name="lamparaLejos" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
 transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.30241, -0.0290411, -0.635688)
@@ -223,13 +224,13 @@ spot_angle = 17.9965
 
 [node name="lamparaCerca" type="SpotLight3D" parent="neck/Primerpersona/Luces"]
 transform = Transform3D(0.999644, -0.012824, 0.0233815, 0.0159236, 0.990358, -0.137613, -0.0213913, 0.137937, 0.99021, 0.292604, -0.0312145, -0.637748)
-light_color = Color(0.860089, 0.874195, 0.755272, 1)
+light_color = Color(0.976471, 0.811765, 0.466667, 1)
 light_energy = 5.0
 light_indirect_energy = 0.8
 light_volumetric_fog_energy = 20.0
 shadow_enabled = true
-spot_range = 10.0
-spot_angle = 35.4343
+spot_range = 15.0
+spot_angle = 30.0
 
 [node name="Hand" type="Node3D" parent="neck/Primerpersona/Luces"]
 

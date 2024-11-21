@@ -1,9 +1,9 @@
 extends CharacterBody3D
 
 #VARIABLES DEL NODO
-var SPEED = 3.2
+var SPEED = 2.5
 var JUMP_VELOCITY = 4.5
-var crouchingSpeed = 1.6
+var crouchingSpeed = 1.25
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var noclip = false  # Variable para activar/desactivar el modo noclip
 var novision = false 
